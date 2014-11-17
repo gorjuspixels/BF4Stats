@@ -1,17 +1,10 @@
 var Promise = require('bluebird');
-var dbConfig = {
-  client: 'pg',
-  connection: {
-    host: 'localhost',
-    user: 'bf4user',
-    password: 'not_so_secure_pass',
-    database: 'bf4',
-    charset: 'utf8'
-  }
-};
+var bcrypt = require('bcrypt')
+var dbConfig = require('./config/db')
 
 var knex = require('knex')(dbConfig);
 var bookshelf = require('bookshelf')(knex);
+var User = require('./models/User')
 
 
 /********** MODELS ***********/
@@ -19,12 +12,7 @@ var Weapon = bookshelf.Model.extend({
   tableName: 'weapon'
 });
 
-var User = bookshelf.Model.extend({
-  tableName: 'user'
-});
-
 exports.createTables = function() {
-
   knex.schema.hasTable('weapon').then(function(exists) {
     if (!exists) {
       return knex.schema.createTable('weapon', function(t) {
@@ -39,8 +27,12 @@ exports.createTables = function() {
       if (!exists) {
         return knex.schema.createTable('user', function(t) {
           t.increments('id').primary();
-          t.string('email', 100);
-          t.string('password', 100);
+          t.string('local_email', 500)
+          t.string('local_password', 500)
+          t.string('fb_token', 500)
+          t.string('fb_id', 500)
+          t.string('fb_email', 500)
+          t.string('fb_name', 500)
         });
       }
     });
@@ -86,7 +78,11 @@ exports.getUsers = function() {
 exports.createUsers = function(users) {
 
   return Promise.each(users, function(userData) {
-    return new User(userData).save().then(function() {
+
+    var user = new User(userData)
+    user.set('local_password', user.generateHash(user.get('local_password')))
+
+    return user.save().then(function() {
       return Promise.resolve()
     })
     .catch(function(error) {
