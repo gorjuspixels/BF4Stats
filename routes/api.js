@@ -77,13 +77,16 @@ router.get('/users', function(req, res) {
   })
 })
 
-router.get('/users/create', function(req, res) {
-  db.createUsers([
-    {
-      local_email: 'test@test.com',
-      local_password: 'no password'
-    }
-  ]).then(function() {
+router.post('/users', function(req, res) {
+  if (!req.body.password)
+    return res.status(500, 'Password missing.')
+  if (!req.body.email)
+    return res.status(500, 'Email address missing')
+
+  db.createUser({
+    local_email: req.body.email,
+    local_password: req.body.password
+  }).then(function() {
     res.status(200).send()
   }).catch(function(err) {
     res.send(err)

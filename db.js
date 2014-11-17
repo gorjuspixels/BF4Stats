@@ -76,20 +76,22 @@ exports.getUsers = function() {
 }
 
 exports.createUsers = function(users) {
-
   return Promise.each(users, function(userData) {
-
-    var user = new User(userData)
-    user.set('local_password', user.generateHash(user.get('local_password')))
-
-    return user.save().then(function() {
-      return Promise.resolve()
-    })
-    .catch(function(error) {
-      console.log(error)
-      return Promise.reject(error)
-    })
+    return createUser(userData)    
   }).then(function() {
     return Promise.resolve()
+  })
+}
+
+var createUser = exports.createUser = function(userData) {
+  var user = new User(userData)
+  user.set('local_password', user.generateHash(user.get('local_password')))
+
+  return user.save().then(function() {
+    return Promise.resolve()
+  })
+  .catch(function(error) {
+    console.log(error, error.stack)
+    return Promise.reject(error)
   })
 }
