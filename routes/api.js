@@ -36,4 +36,27 @@ router.post('/weapons', function(req, res) {
   })
 })
 
+
+
+router.get('/users', function(req, res) {
+  db.getUsers().then(function(users) {
+    res.send(users.toJSON())
+  }).catch(function(err) {
+    res.send(err)
+  })
+})
+
+router.post('/users', function(req, res) {
+  db.createUsers([
+    {
+      email: 'test@test.com',
+      password: 'no password'
+    }
+  ]).then(function(msg) {
+    res.send(msg)
+  }).catch(function(err) {
+    res.send(err)
+  })
+})
+
 module.exports = router;
