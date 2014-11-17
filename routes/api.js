@@ -79,9 +79,9 @@ router.get('/users', function(req, res) {
 
 router.post('/users', function(req, res) {
   if (!req.body.password)
-    return res.status(500, 'Password missing.')
+    return res.status(500).send('Password missing.')
   if (!req.body.email)
-    return res.status(500, 'Email address missing')
+    return res.status(500).send('Email address missing')
 
   db.createUser({
     local_email: req.body.email,
