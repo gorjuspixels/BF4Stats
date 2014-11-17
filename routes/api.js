@@ -83,8 +83,8 @@ router.get('/users/create', function(req, res) {
       local_email: 'test@test.com',
       local_password: 'no password'
     }
-  ]).then(function(msg) {
-    res.send(msg)
+  ]).then(function() {
+    res.status(200).send()
   }).catch(function(err) {
     res.send(err)
   })

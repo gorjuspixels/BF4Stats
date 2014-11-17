@@ -89,7 +89,7 @@ exports.createUsers = function(users) {
       console.log(error)
       return Promise.reject(error)
     })
-  }).then(function(msg) {
-    return Promise.resolve(msg)
+  }).then(function() {
+    return Promise.resolve()
   })
 }
