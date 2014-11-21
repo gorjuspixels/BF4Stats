@@ -3,5 +3,51 @@ html
   head
     title= title
     link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="description", content="")
+    meta(name="author", content="")
+
+    <!-- Bootstrap Core CSS -->
+    link(href="/stylesheets/bootstrap.min.css", rel="stylesheet")
+
+    <!-- Custom CSS -->
+    link(href="/stylesheets/grayscale.css", rel="stylesheet")
+
+    <!-- Custom Fonts -->
+    link(href="/stylesheets/font-awesome.min.css", rel="stylesheet", type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic", rel="stylesheet", type="text/css")
+    link(href="http://fonts.googleapis.com/css?family=Montserrat:400,700", rel="stylesheet", type="text/css")
+  body#page-top(data-spy="scroll", data-target=".navbar-fixed-top")
+    nav.navbar.navbar-custom.navbar-fixed-top(role='navigation')
+        .container
+            .navbar-header
+              button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
+                i.fa.fa-bars
+              a.navbar-brand.page-scroll(href='#page-top')
+                i.fa.fa-play-circle
+                span.light Database
+                | Assignment
+
+            .collapse.navbar-collapse.navbar-right.navbar-main-collapse
+              ul.nav.navbar-nav
+                li.hidden
+                  a(href='#page-top')
+                li
+                  a.page-scroll(href='#about') About
+                li
+                  a.page-scroll(href='#download') Log In
+                li
+                  a.page-scroll(href='#contact') Contact
+
     block content
+
+    footer.container.text-center
+      p
+        | © Abishek Kailash X Keshav Sonal Kharangate X Yasha Prikhodko X Neelanandandana Sukhdeo X Navjot Billing
+
+    script(src='/js/jquery.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/jquery.easing.min.js')
+    script(src='/js/grayscale.js')

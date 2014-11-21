@@ -1,5 +1,87 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+  header.intro
+    .intro-body
+        .container
+          .row
+            .col-md-8.col-md-offset-2
+              h1.brand-heading BFFs
+              p.intro-text
+                | Upto Date Battlefield 4 weapon stats to help you improve your game!
+                br
+                | .
+              a.btn.btn-circle.page-scroll(href='#about')
+                i.fa.fa-angle-double-down.animated
+  //
+     About Section
+  section#about.container.content-section.text-center
+    .row
+      .col-lg-8.col-lg-offset-2
+        h2 About
+        p
+          | The goal of this project is to create a database of all the weapons in Battlefield 4 and its expansion packs along with all the attachments.
+          p
+            p
+              | Users can now perform queries to obtain a very specific gun & attachments of his/her choice along with the data and stats that show how each attachment affects that certain gun.
+              a(href='placeholder')
+              p
+                p
+                  | So go ahead and manipulate every possible combination to get an edge over the average player
+  //
+     Members Section
+  section#download.content-section.text-center
+    .download-section
+      .container
+        .container
+          .row
+            .main
+              h3
+                | Please Log In, or
+                a(href='#') Sign Up
+              .row
+                .col-xs-6.col-sm-6.col-md-6
+                  a.btn.btn-lg.btn-primary.btn-block(href='#') Facebook
+                .col-xs-6.col-sm-6.col-md-6
+                  a.btn.btn-lg.btn-info.btn-block(href='#') Google
+              .login-or
+                hr.hr-or
+                span.span-or or
+              form(role='form')
+                .form-group
+                  label(for='inputUsernameEmail') Username or email
+                  input#inputUsernameEmail.form-control(type='text')
+                .form-group
+                  a.pull-right(href='#') Forgot password?
+                  label(for='inputPassword') Password
+                  input#inputPassword.form-control(type='password')
+                .checkbox.pull-right
+                  label
+                    input(type='checkbox')
+                    | Remember me
+                button.btn.btn.btn-primary(type='submit')
+                  | Log In
+  //
+     Contact Section
+  section#contact.container.content-section.text-center
+    .row
+      .col-lg-8.col-lg-offset-2
+        h2 Contact BFFs
+        p
+          | Like what you see? Go ahead follow and add us.Or contribute to the project.Shut up
+        p
+          a(href='mailto:sonalkeshav95@gmail.com') Keshav Sonal; sonalkeshav95@gmail.com
+        ul.list-inline.banner-social-buttons
+          li
+            a.btn.btn-default.btn-lg(href='https://twitter.com/SBootstrap')
+              i.fa.fa-twitter.fa-fw
+              span.network-name Twitter
+          li
+            a.btn.btn-default.btn-lg(href='https://github.com/IronSummitMedia/startbootstrap')
+              i.fa.fa-github.fa-fw
+              span.network-name Github
+          li
+            a.btn.btn-default.btn-lg(href='https://plus.google.com/+Startbootstrap/posts')
+              i.fa.fa-google-plus.fa-fw
+              span.network-name Google+
+
