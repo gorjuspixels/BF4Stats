@@ -3,7 +3,8 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res) {
-  res.render('index', { title: 'Express' });
+  console.log(req.user)
+  res.render('index', { title: 'BF4 Stats', user: req.user || null });
 });
 
 module.exports = router;

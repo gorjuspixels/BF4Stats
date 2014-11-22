@@ -2,7 +2,6 @@ doctype html
 html
   head
     title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
     meta(charset="utf-8")
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport", content="width=device-width, initial-scale=1")
@@ -14,6 +13,7 @@ html
 
     <!-- Custom CSS -->
     link(href="/stylesheets/grayscale.css", rel="stylesheet")
+    link(rel='stylesheet', href='/stylesheets/style.css')
 
     <!-- Custom Fonts -->
     link(href="/stylesheets/font-awesome.min.css", rel="stylesheet", type="text/css")
@@ -25,10 +25,10 @@ html
             .navbar-header
               button.navbar-toggle(type='button', data-toggle='collapse', data-target='.navbar-main-collapse')
                 i.fa.fa-bars
-              a.navbar-brand.page-scroll(href='#page-top')
+              a.navbar-brand.page-scroll(href='/')
                 i.fa.fa-play-circle
                 span.light Database
-                | Assignment
+                |  Assignment
 
             .collapse.navbar-collapse.navbar-right.navbar-main-collapse
               ul.nav.navbar-nav

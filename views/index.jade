@@ -30,37 +30,50 @@ block content
                   | So go ahead and manipulate every possible combination to get an edge over the average player
   //
      Members Section
-  section#download.content-section.text-center
-    .download-section
-      .container
+  if !user
+    section#download.content-section.text-center
+      .download-section
         .container
-          .row
-            .main
-              h3
-                | Please Log In, or
-                a(href='#') Sign Up
-              .row
-                .col-xs-6.col-sm-6.col-md-6
-                  a.btn.btn-lg.btn-primary.btn-block(href='#') Facebook
-                .col-xs-6.col-sm-6.col-md-6
-                  a.btn.btn-lg.btn-info.btn-block(href='#') Google
-              .login-or
-                hr.hr-or
-                span.span-or or
-              form(role='form')
-                .form-group
-                  label(for='inputUsernameEmail') Username or email
-                  input#inputUsernameEmail.form-control(type='text')
-                .form-group
-                  a.pull-right(href='#') Forgot password?
-                  label(for='inputPassword') Password
-                  input#inputPassword.form-control(type='password')
-                .checkbox.pull-right
-                  label
-                    input(type='checkbox')
-                    | Remember me
-                button.btn.btn.btn-primary(type='submit')
-                  | Log In
+          .container
+            .row
+              .main
+                h3
+                  | Please Log In, or
+                  a(href='#')  Sign Up
+                //- .row
+                //-   .col-xs-6.col-sm-6.col-md-6
+                //-     a.btn.btn-lg.btn-primary.btn-block(href='#') Facebook
+                //-   .col-xs-6.col-sm-6.col-md-6
+                //-     a.btn.btn-lg.btn-info.btn-block(href='#') Google
+                .login-or
+                  hr.hr-or
+                  span.span-or or
+                form(role='form' action='/login' method='POST')
+                  .form-group
+                    label(for='inputUsernameEmail') Username or email
+                    input#inputUsernameEmail.form-control(type='text' name='username')
+                  .form-group
+                    label(for='inputPassword') Password
+                    input#inputPassword.form-control(type='password' name='password')
+                    a.pull-right(href='#') Forgot password?
+                  .checkbox.pull-right
+                    label
+                      input(type='checkbox')
+                      | Remember me
+                  button.btn.btn.btn-primary(type='submit')
+                    | Log In
+
+  if user
+    section#download.content-section.text-center
+      .download-section
+        .container
+          .container
+            .row
+              .main
+                h3 You are logged in!
+                .row
+                  .col-xs-12.col-sm-12.col-md-12
+                    a.btn.btn-lg.btn-primary.btn-block(href='/api') View API
   //
      Contact Section
   section#contact.container.content-section.text-center

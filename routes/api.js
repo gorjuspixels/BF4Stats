@@ -7,36 +7,6 @@ var db = require('../db')
 
 db.createTables()
 
-var TOKEN_SECRET = 'not_secure_secret'
-
-var passport = require('passport'),
-  LocalStrategy = require('passport-local').Strategy,
-  User = require('../models/User')
-
-passport.use(new LocalStrategy(function(email, password, done) {
-  new User({
-    local_email: email
-  })
-    .fetch()
-    .then(function(user) {
-      if (!user)
-        return done(null, false, {
-          message: 'Incorrect username.'
-        });
-
-      if (!user.validPassword(password))
-        return done(null, false, {
-          message: 'Incorrect password.'
-        });
-
-      return done(null, user);
-    })
-    .catch(function(err) {
-      return done(err);
-    })
-}));
-
-
 /* GET home page. */
 router.get('/', function(req, res) {
   res.render('../views/api');
@@ -91,21 +61,6 @@ router.post('/users', function(req, res) {
   }).catch(function(err) {
     res.send(err)
   })
-})
-
-router.post('/login', function(req, res, next) {
-  passport.authenticate('local', { session: false }, function(err, user, info) {
-    // If this function gets called, authentication was successful.
-    // `req.user` contains the authenticated user.
-    if (err) { return next(err) }
-    if (!user) {
-      return res.status(401).json({ error: 'No user found' });
-    }
-
-    //user has authenticated correctly thus we create a JWT token 
-    var token = jwt.encode({ email: user.local_email}, TOKEN_SECRET);
-    res.json({ token : token });
-  })(req, res, next);
 })
 
 module.exports = router;
