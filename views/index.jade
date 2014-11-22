@@ -45,9 +45,9 @@ block content
                 //-     a.btn.btn-lg.btn-primary.btn-block(href='#') Facebook
                 //-   .col-xs-6.col-sm-6.col-md-6
                 //-     a.btn.btn-lg.btn-info.btn-block(href='#') Google
-                .login-or
-                  hr.hr-or
-                  span.span-or or
+                //- .login-or
+                //-   hr.hr-or
+                //-   span.span-or or
                 form(role='form' action='/login' method='POST')
                   .form-group
                     label(for='inputUsernameEmail') Username or email
@@ -55,13 +55,14 @@ block content
                   .form-group
                     label(for='inputPassword') Password
                     input#inputPassword.form-control(type='password' name='password')
-                    a.pull-right(href='#') Forgot password?
-                  .checkbox.pull-right
-                    label
-                      input(type='checkbox')
-                      | Remember me
-                  button.btn.btn.btn-primary(type='submit')
-                    | Log In
+                    //- a.pull-right(href='#') Forgot password?
+                  //- .checkbox.pull-right
+                  //-   label
+                  //-     input(type='checkbox')
+                  //-     | Remember me
+                  .col-xs-12.col-sm-12.col-md-12
+                    button.btn.btn-lg.btn-primary.btn-block(type='submit')
+                      | Log In
 
   if user
     section#download.content-section.text-center

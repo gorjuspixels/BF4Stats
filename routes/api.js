@@ -9,6 +9,7 @@ db.createTables()
 
 /* GET home page. */
 router.get('/', function(req, res) {
+  if (!req.user) return res.render('error', { message: 'Permission denied!', error: {status: 403}})
   res.render('../views/api');
 });
 
