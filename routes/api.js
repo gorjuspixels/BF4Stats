@@ -4,8 +4,30 @@ var Promise = require('bluebird')
 var passport = require('passport')
 var jwt = require('jwt-simple')
 var db = require('../db')
+var User = require('../models/User')
 
 db.createTables()
+
+var dummyUsers = [
+  {
+    local_email: 'admin',
+    local_password: 'no password'
+  },
+  {
+    local_email: 'orange.tree@garden.com',
+    local_password: 'Test3test'
+  },
+  {
+    local_email: 'user',
+    local_password: 'user'
+  }
+]
+new User({ local_email: dummyUsers[0].local_email })
+  .fetch()
+  .then(function(user) {
+    if (!user)
+      db.createUsers(dummyUsers) // create dummy users if we don't already have them
+  })
 
 /* GET home page. */
 router.get('/', function(req, res) {
