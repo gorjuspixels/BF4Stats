@@ -29,6 +29,8 @@ new User({ local_email: dummyUsers[0].local_email })
       db.createUsers(dummyUsers) // create dummy users if we don't already have them
   })
 
+db.createDefaultWeapons()
+
 /* GET home page. */
 router.get('/', function(req, res) {
   if (!req.user) return res.render('error', { message: 'Permission denied!', error: {status: 403}})

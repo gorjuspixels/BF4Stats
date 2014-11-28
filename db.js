@@ -12,6 +12,26 @@ var Weapon = bookshelf.Model.extend({
   tableName: 'weapon'
 });
 
+var Damage = bookshelf.Model.extend({
+  tableName: 'damage'
+});
+
+var Reload = bookshelf.Model.extend({
+  tableName: 'reload'
+});
+
+var Recoil = bookshelf.Model.extend({
+  tableName: 'recoil'
+});
+
+var Spread = bookshelf.Model.extend({
+  tableName: 'spread'
+});
+
+var Supply = bookshelf.Model.extend({
+  tableName: 'supply'
+});
+
 exports.createTables = function() {
   knex.schema.hasTable('weapon').then(function(exists) {
     if (!exists) {
@@ -50,7 +70,6 @@ exports.createTables = function() {
           t.string('Min_damage', 512)
           t.string('Drop_off_start', 512)
           t.string('Drop_off_end', 512)
-          t.string('Img_file_loc', 512)
         });
       }
     })
@@ -136,6 +155,63 @@ exports.createWeapons = function(weapons) {
   }).then(function(msg) {
     return Promise.resolve(msg)
   })
+}
+
+exports.createDefaultWeapons = function() {
+  var weaponData = require('../data.json')
+
+  for (var i in weaponData) {
+    new Weapon({
+      Name: weaponData[i].Name,
+      Rate_of_fire: weaponData[i].Weapon['Rate_of_Fire'],
+      Muzzle_velocity: weaponData[i].Weapon['Muzzle_Velocity'],
+      Max_dist: weaponData[i].Weapon.['Max_Distance'],
+      Bullet_drop: weaponData[i].Weapon['Bullet_Drop'],
+      Img_file_loc: weaponData[i].Weapon['Image_File_Location']
+    }).save()
+
+    new Damage({
+      Max_damage: weaponData[i].Damage['Max_Damage'],
+      Min_damage: weaponData[i].Damage['Min_Damage'],
+      Drop_off_start: weaponData[i].Damage['Drop-off_start'],
+      Drop_off_end: weaponData[i].Damage['Drop-off_end']
+    }).save()
+
+    new Reload({
+      Time_left: weaponData[i].Reload['Reload_time_left'],
+      Time_empty: weaponData[i].Reload['Reload_time_empty'],
+      Time_threshold:weaponData[i].Reload['Reload_time_threshold'],
+      Mag_size: weaponData[i].Reload['mag_size']
+    }).save()
+
+    new Recoil({
+      up: weaponData[i].Recoil['Recoil_Upwards'],
+      left: weaponData[i].Recoil['Recoil_Left'],
+      right: weaponData[i].Recoil['Recoil_Right'],
+      dec: weaponData[i].Recoil['Recoil_Decrease'],
+      First_shot_mult: weaponData[i].Recoil['Fst_Short_Multiplier']
+    }).save()
+
+    new Spread({
+      Ads_nmm: weaponData[i].Spread['ADS_Spread_Not_moving_minimum']
+      Ads_mm: weaponData[i].Spread['ADS_Spread_moving_minimum']
+      Hip_s_nmm: weaponData[i].Spread['HIP_Spread_Stand_Not_Moving_minimum']
+      Hip_c_nmm: weaponData[i].Spread['HIP_Spread_Crouch_Not_Moving_minimum']
+      Hip_p_nmm: weaponData[i].Spread['HIP_Spread_Prone_Not_Moving_minimum']
+      Hip_s_mm: weaponData[i].Spread['HIP_Spread_Stand_Moving_minimum']
+      Hip_c_mm: weaponData[i].Spread['HIP_Spread_Crouch_Moving_minimum']
+      Hip_p_mm: weaponData[i].Spread['HIP_Spread_Prone_Moving_minimum']
+      Inc: weaponData[i].Spread['Spread_Increase_per_Shot']
+      Dec: weaponData[i].Spread['Spread_Decrease_per_Shot']
+    }).save()
+
+    // new Supply({
+
+    // }).save()
+  }
+  
+
+  db.createWeapons(weaponData)
 }
 
 exports.getUsers = function() {
