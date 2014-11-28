@@ -165,7 +165,7 @@ exports.createDefaultWeapons = function() {
       Name: weaponData[i].Name,
       Rate_of_fire: weaponData[i].Weapon['Rate_of_Fire'],
       Muzzle_velocity: weaponData[i].Weapon['Muzzle_Velocity'],
-      Max_dist: weaponData[i].Weapon.['Max_Distance'],
+      Max_dist: weaponData[i].Weapon['Max_Distance'],
       Bullet_drop: weaponData[i].Weapon['Bullet_Drop'],
       Img_file_loc: weaponData[i].Weapon['Image_File_Location']
     }).save()
