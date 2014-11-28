@@ -162,7 +162,7 @@ exports.createDefaultWeapons = function() {
 
   for (var i in weaponData) {
     new Weapon({
-      Name: weaponData[i].Name,
+      Name: weaponData[i].Weapon['Name'],
       Rate_of_fire: weaponData[i].Weapon['Rate_of_Fire'],
       Muzzle_velocity: weaponData[i].Weapon['Muzzle_Velocity'],
       Max_dist: weaponData[i].Weapon['Max_Distance'],
