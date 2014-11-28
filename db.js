@@ -193,15 +193,15 @@ exports.createDefaultWeapons = function() {
     }).save()
 
     new Spread({
-      Ads_nmm: weaponData[i].Spread['ADS_Spread_Not_moving_minimum']
-      Ads_mm: weaponData[i].Spread['ADS_Spread_moving_minimum']
-      Hip_s_nmm: weaponData[i].Spread['HIP_Spread_Stand_Not_Moving_minimum']
-      Hip_c_nmm: weaponData[i].Spread['HIP_Spread_Crouch_Not_Moving_minimum']
-      Hip_p_nmm: weaponData[i].Spread['HIP_Spread_Prone_Not_Moving_minimum']
-      Hip_s_mm: weaponData[i].Spread['HIP_Spread_Stand_Moving_minimum']
-      Hip_c_mm: weaponData[i].Spread['HIP_Spread_Crouch_Moving_minimum']
-      Hip_p_mm: weaponData[i].Spread['HIP_Spread_Prone_Moving_minimum']
-      Inc: weaponData[i].Spread['Spread_Increase_per_Shot']
+      Ads_nmm: weaponData[i].Spread['ADS_Spread_Not_moving_minimum'],
+      Ads_mm: weaponData[i].Spread['ADS_Spread_moving_minimum'],
+      Hip_s_nmm: weaponData[i].Spread['HIP_Spread_Stand_Not_Moving_minimum'],
+      Hip_c_nmm: weaponData[i].Spread['HIP_Spread_Crouch_Not_Moving_minimum'],
+      Hip_p_nmm: weaponData[i].Spread['HIP_Spread_Prone_Not_Moving_minimum'],
+      Hip_s_mm: weaponData[i].Spread['HIP_Spread_Stand_Moving_minimum'],
+      Hip_c_mm: weaponData[i].Spread['HIP_Spread_Crouch_Moving_minimum'],
+      Hip_p_mm: weaponData[i].Spread['HIP_Spread_Prone_Moving_minimum'],
+      Inc: weaponData[i].Spread['Spread_Increase_per_Shot'],
       Dec: weaponData[i].Spread['Spread_Decrease_per_Shot']
     }).save()
 
