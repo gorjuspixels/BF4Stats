@@ -194,7 +194,6 @@ exports.createDefaultWeapons = function() {
 
     new Spread({
       Ads_nmm: weaponData[i].Spread['ADS_Spread_Not_moving_minimum'],
-      Ads_mm: weaponData[i].Spread['ADS_Spread_moving_minimum'],
       Hip_s_nmm: weaponData[i].Spread['HIP_Spread_Stand_Not_Moving_minimum'],
       Hip_c_nmm: weaponData[i].Spread['HIP_Spread_Crouch_Not_Moving_minimum'],
       Hip_p_nmm: weaponData[i].Spread['HIP_Spread_Prone_Not_Moving_minimum'],
