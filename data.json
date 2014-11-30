@@ -2,7 +2,7 @@
         "Weapon": {
             "Name": "M9",
             "Rate_of_Fire": "400RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "380 m/s",
             "Bullet_Drop": "570m",
             "Image_File_Location": "./bf4_stats_files/M9.png"
@@ -45,7 +45,7 @@
         "Weapon": {
             "Name": "CZ-75",
             "Rate_of_Fire": "360RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "380 m/s",
             "Bullet_Drop": "570m",
             "Image_File_Location": "./bf4_stats_files/CZ-75.png"
@@ -88,7 +88,7 @@
         "Weapon": {
             "Name": "FN57",
             "Rate_of_Fire": "455RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "430 m/s",
             "Bullet_Drop": "645m",
             "Image_File_Location": "./bf4_stats_files/FN57.png"
@@ -131,7 +131,7 @@
         "Weapon": {
             "Name": "93R",
             "Rate_of_Fire": "900RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "380 m/s",
             "Bullet_Drop": "570m",
             "Image_File_Location": "./bf4_stats_files/93R.png"
@@ -174,7 +174,7 @@
         "Weapon": {
             "Name": "P226",
             "Rate_of_Fire": "400RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "350 m/s",
             "Bullet_Drop": "525m",
             "Image_File_Location": "./bf4_stats_files/P226.png"
@@ -217,7 +217,7 @@
         "Weapon": {
             "Name": "SW40",
             "Rate_of_Fire": "220RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "400 m/s",
             "Bullet_Drop": "600m",
             "Image_File_Location": "./bf4_stats_files/SW40.png"
@@ -260,7 +260,7 @@
         "Weapon": {
             "Name": "Compact 45",
             "Rate_of_Fire": "320RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "270 m/s",
             "Bullet_Drop": "405m",
             "Image_File_Location": "./bf4_stats_files/Compact_45.png"
@@ -303,7 +303,7 @@
         "Weapon": {
             "Name": "M1911",
             "Rate_of_Fire": "310RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "310 m/s",
             "Bullet_Drop": "465m",
             "Image_File_Location": "./bf4_stats_files/M1911.png"
@@ -346,7 +346,7 @@
         "Weapon": {
             "Name": "MP443",
             "Rate_of_Fire": "380RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "320 m/s",
             "Bullet_Drop": "480m",
             "Image_File_Location": "./bf4_stats_files/MP443.png"
@@ -389,7 +389,7 @@
         "Weapon": {
             "Name": "QSZ-92",
             "Rate_of_Fire": "455RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "340 m/s",
             "Bullet_Drop": "510m",
             "Image_File_Location": "./bf4_stats_files/QSZ-92.png"
@@ -432,7 +432,7 @@
         "Weapon": {
             "Name": "Unica 6",
             "Rate_of_Fire": "210RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "440 m/s",
             "Bullet_Drop": "660m",
             "Image_File_Location": ""
@@ -475,7 +475,7 @@
         "Weapon": {
             "Name": "G18",
             "Rate_of_Fire": "900RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "380 m/s",
             "Bullet_Drop": "570m",
             "Image_File_Location": "./bf4_stats_files/G18.png"
@@ -518,7 +518,7 @@
         "Weapon": {
             "Name": "MP412 Rex",
             "Rate_of_Fire": "180RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "400 m/s",
             "Bullet_Drop": "600m",
             "Image_File_Location": "./bf4_stats_files/MP412_Rex.png"
@@ -561,7 +561,7 @@
         "Weapon": {
             "Name": "44 Magnum",
             "Rate_of_Fire": "150RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "460 m/s",
             "Bullet_Drop": "690m",
             "Image_File_Location": "./bf4_stats_files/44_Magnum.png"
@@ -604,7 +604,7 @@
         "Weapon": {
             "Name": "Deagle 44",
             "Rate_of_Fire": "220RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "320 m/s",
             "Bullet_Drop": "480m",
             "Image_File_Location": "./bf4_stats_files/Deagle_44.png"
@@ -647,7 +647,7 @@
         "Weapon": {
             "Name": "RFB",
             "Rate_of_Fire": "260RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "3000m",
             "Image_File_Location": "./bf4_stats_files/RFB.png"
@@ -690,7 +690,7 @@
         "Weapon": {
             "Name": "SKS",
             "Rate_of_Fire": "333RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "490 m/s",
             "Bullet_Drop": "2450m",
             "Image_File_Location": "./bf4_stats_files/SKS.png"
@@ -733,7 +733,7 @@
         "Weapon": {
             "Name": "MK11 MOD 0",
             "Rate_of_Fire": "260RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "640 m/s",
             "Bullet_Drop": "3200m",
             "Image_File_Location": "./bf4_stats_files/MK11_MOD_0.png"
@@ -776,7 +776,7 @@
         "Weapon": {
             "Name": "QBU-88",
             "Rate_of_Fire": "310RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "670 m/s",
             "Bullet_Drop": "3350m",
             "Image_File_Location": "./bf4_stats_files/QBU-88.png"
@@ -819,7 +819,7 @@
         "Weapon": {
             "Name": "SVD-12",
             "Rate_of_Fire": "260RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "590 m/s",
             "Bullet_Drop": "2950m",
             "Image_File_Location": "./bf4_stats_files/SVD-12.png"
@@ -862,7 +862,7 @@
         "Weapon": {
             "Name": "M39 EMR",
             "Rate_of_Fire": "300RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "650 m/s",
             "Bullet_Drop": "3250m",
             "Image_File_Location": "./bf4_stats_files/M39_EMR.png"
@@ -905,7 +905,7 @@
         "Weapon": {
             "Name": "SCAR-H SV",
             "Rate_of_Fire": "260RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "620 m/s",
             "Bullet_Drop": "3100m",
             "Image_File_Location": "./bf4_stats_files/SCAR-H_SV.png"
@@ -948,7 +948,7 @@
         "Weapon": {
             "Name": "ACE 53 SV",
             "Rate_of_Fire": "260RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "580 m/s",
             "Bullet_Drop": "2900m",
             "Image_File_Location": "./bf4_stats_files/ACE_53_SV.png"
@@ -991,7 +991,7 @@
         "Weapon": {
             "Name": "A-91",
             "Rate_of_Fire": "800RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "470 m/s",
             "Bullet_Drop": "705m",
             "Image_File_Location": "./bf4_stats_files/A-91.png"
@@ -1034,7 +1034,7 @@
         "Weapon": {
             "Name": "ACW-R",
             "Rate_of_Fire": "880RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "500 m/s",
             "Bullet_Drop": "750m",
             "Image_File_Location": "./bf4_stats_files/ACW-R.png"
@@ -1077,7 +1077,7 @@
         "Weapon": {
             "Name": "AK 5C",
             "Rate_of_Fire": "700RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "630 m/s",
             "Bullet_Drop": "945m",
             "Image_File_Location": "./bf4_stats_files/AK_5C.png"
@@ -1120,7 +1120,7 @@
         "Weapon": {
             "Name": "G36C",
             "Rate_of_Fire": "650RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "550 m/s",
             "Bullet_Drop": "825m",
             "Image_File_Location": "./bf4_stats_files/G36C.png"
@@ -1163,7 +1163,7 @@
         "Weapon": {
             "Name": "M4",
             "Rate_of_Fire": "800RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "580 m/s",
             "Bullet_Drop": "870m",
             "Image_File_Location": "./bf4_stats_files/M4.png"
@@ -1206,7 +1206,7 @@
         "Weapon": {
             "Name": "AKU-12",
             "Rate_of_Fire": "680RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "500 m/s",
             "Bullet_Drop": "750m",
             "Image_File_Location": "./bf4_stats_files/AKU-12.png"
@@ -1249,7 +1249,7 @@
         "Weapon": {
             "Name": "MTAR-21",
             "Rate_of_Fire": "900RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "540 m/s",
             "Bullet_Drop": "810m",
             "Image_File_Location": "./bf4_stats_files/MTAR-21.png"
@@ -1292,7 +1292,7 @@
         "Weapon": {
             "Name": "SG553",
             "Rate_of_Fire": "830RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "470 m/s",
             "Bullet_Drop": "705m",
             "Image_File_Location": "./bf4_stats_files/SG553.png"
@@ -1335,7 +1335,7 @@
         "Weapon": {
             "Name": "Type-95B-1",
             "Rate_of_Fire": "650RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "540 m/s",
             "Bullet_Drop": "810m",
             "Image_File_Location": "./bf4_stats_files/Type-95B-1.png"
@@ -1378,7 +1378,7 @@
         "Weapon": {
             "Name": "ACE 21 CQB",
             "Rate_of_Fire": "770RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "440 m/s",
             "Bullet_Drop": "615m",
             "Image_File_Location": "./bf4_stats_files/ACE_21_CQB.png"
@@ -1421,7 +1421,7 @@
         "Weapon": {
             "Name": "ACE 52 CQB",
             "Rate_of_Fire": "650RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "400 m/s",
             "Bullet_Drop": "600m",
             "Image_File_Location": "./bf4_stats_files/ACE_52_CQB.png"
@@ -1464,7 +1464,7 @@
         "Weapon": {
             "Name": "CS5",
             "Rate_of_Fire": "63RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "400 m/s",
             "Bullet_Drop": "2000m",
             "Image_File_Location": "./bf4_stats_files/CS5.png"
@@ -1507,7 +1507,7 @@
         "Weapon": {
             "Name": "GOL Magnum",
             "Rate_of_Fire": "51RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "580 m/s",
             "Bullet_Drop": "2900m",
             "Image_File_Location": "./bf4_stats_files/GOL_Magnum.png"
@@ -1550,7 +1550,7 @@
         "Weapon": {
             "Name": "338-Recon",
             "Rate_of_Fire": "48RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "520 m/s",
             "Bullet_Drop": "2600m",
             "Image_File_Location": "./bf4_stats_files/338-Recon.png"
@@ -1593,7 +1593,7 @@
         "Weapon": {
             "Name": "AMR-2",
             "Rate_of_Fire": "41RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "560 m/s",
             "Bullet_Drop": "2800m",
             "Image_File_Location": "./bf4_stats_files/AMR-2.png"
@@ -1636,7 +1636,7 @@
         "Weapon": {
             "Name": "SRR-61",
             "Rate_of_Fire": "40RPM",
-            "Muzzle_Velocity": "6m/sÂ²",
+            "Muzzle_Velocity": "6m/s²",
             "Max_Distance": "620 m/s",
             "Bullet_Drop": "3100m",
             "Image_File_Location": "./bf4_stats_files/SRR-61.png"
@@ -1679,7 +1679,7 @@
         "Weapon": {
             "Name": "M98B",
             "Rate_of_Fire": "40RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "650 m/s",
             "Bullet_Drop": "3250m",
             "Image_File_Location": "./bf4_stats_files/M98B.png"
@@ -1722,7 +1722,7 @@
         "Weapon": {
             "Name": "SV98",
             "Rate_of_Fire": "50RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "520 m/s",
             "Bullet_Drop": "2600m",
             "Image_File_Location": "./bf4_stats_files/SV98.png"
@@ -1765,7 +1765,7 @@
         "Weapon": {
             "Name": "FY-JS",
             "Rate_of_Fire": "54RPM",
-            "Muzzle_Velocity": "6m/sÂ²",
+            "Muzzle_Velocity": "6m/s²",
             "Max_Distance": "630 m/s",
             "Bullet_Drop": "3150m",
             "Image_File_Location": "./bf4_stats_files/FY-JS.png"
@@ -1808,7 +1808,7 @@
         "Weapon": {
             "Name": "JNG-90",
             "Rate_of_Fire": "41RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "670 m/s",
             "Bullet_Drop": "3350m",
             "Image_File_Location": "./bf4_stats_files/JNG-90.png"
@@ -1851,7 +1851,7 @@
         "Weapon": {
             "Name": "L96A1",
             "Rate_of_Fire": "48RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "550 m/s",
             "Bullet_Drop": "2750m",
             "Image_File_Location": "./bf4_stats_files/L96A1.png"
@@ -1894,7 +1894,7 @@
         "Weapon": {
             "Name": "M40A5",
             "Rate_of_Fire": "60RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "480 m/s",
             "Bullet_Drop": "2400m",
             "Image_File_Location": "./bf4_stats_files/M40A5.png"
@@ -1937,7 +1937,7 @@
         "Weapon": {
             "Name": "M82A3",
             "Rate_of_Fire": "125RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "560 m/s",
             "Bullet_Drop": "2800m",
             "Image_File_Location": "./bf4_stats_files/M82A3.png"
@@ -1980,7 +1980,7 @@
         "Weapon": {
             "Name": "SR338",
             "Rate_of_Fire": "150RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "3000m",
             "Image_File_Location": "./bf4_stats_files/SR338.png"
@@ -2023,7 +2023,7 @@
         "Weapon": {
             "Name": "CS-LR4",
             "Rate_of_Fire": "46RPM",
-            "Muzzle_Velocity": "9.81m/sÂ²",
+            "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "630 m/s",
             "Bullet_Drop": "3150m",
             "Image_File_Location": "./bf4_stats_files/CS-LR4.png"
@@ -2066,7 +2066,7 @@
         "Weapon": {
             "Name": "Scout Elite",
             "Rate_of_Fire": "63RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "640 m/s",
             "Bullet_Drop": "3200m",
             "Image_File_Location": "./bf4_stats_files/Scout_Elite.png"
@@ -2109,7 +2109,7 @@
         "Weapon": {
             "Name": "AWS",
             "Rate_of_Fire": "780RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "580 m/s",
             "Bullet_Drop": "870m",
             "Image_File_Location": "./bf4_stats_files/AWS.png"
@@ -2152,7 +2152,7 @@
         "Weapon": {
             "Name": "MG4",
             "Rate_of_Fire": "800RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "620 m/s",
             "Bullet_Drop": "930m",
             "Image_File_Location": "./bf4_stats_files/MG4.png"
@@ -2195,7 +2195,7 @@
         "Weapon": {
             "Name": "LSAT",
             "Rate_of_Fire": "650RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "620 m/s",
             "Bullet_Drop": "930m",
             "Image_File_Location": "./bf4_stats_files/LSAT.png"
@@ -2238,7 +2238,7 @@
         "Weapon": {
             "Name": "M240B",
             "Rate_of_Fire": "650RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "610 m/s",
             "Bullet_Drop": "915m",
             "Image_File_Location": "./bf4_stats_files/M240B.png"
@@ -2281,7 +2281,7 @@
         "Weapon": {
             "Name": "M249",
             "Rate_of_Fire": "800RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "620 m/s",
             "Bullet_Drop": "930m",
             "Image_File_Location": "./bf4_stats_files/M249.png"
@@ -2324,7 +2324,7 @@
         "Weapon": {
             "Name": "M60E4",
             "Rate_of_Fire": "570RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
             "Image_File_Location": "./bf4_stats_files/M60E4.png"
@@ -2367,7 +2367,7 @@
         "Weapon": {
             "Name": "QBB-95-1",
             "Rate_of_Fire": "650RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
             "Image_File_Location": "./bf4_stats_files/QBB-95-1.png"
@@ -2410,7 +2410,7 @@
         "Weapon": {
             "Name": "RPK-12",
             "Rate_of_Fire": "600RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
             "Image_File_Location": "./bf4_stats_files/RPK-12.png"
@@ -2453,7 +2453,7 @@
         "Weapon": {
             "Name": "RPK-74M",
             "Rate_of_Fire": "600RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
             "Image_File_Location": "./bf4_stats_files/RPK-74M.png"
@@ -2496,7 +2496,7 @@
         "Weapon": {
             "Name": "Type-88 LMG",
             "Rate_of_Fire": "700RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
             "Image_File_Location": "./bf4_stats_files/Type-88_LMG.png"
@@ -2539,7 +2539,7 @@
         "Weapon": {
             "Name": "U-100 MK5",
             "Rate_of_Fire": "590RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "650 m/s",
             "Bullet_Drop": "975m",
             "Image_File_Location": "./bf4_stats_files/U-100_MK5.png"
@@ -2582,7 +2582,7 @@
         "Weapon": {
             "Name": "PKP Pecheneg",
             "Rate_of_Fire": "600RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "560 m/s",
             "Bullet_Drop": "840m",
             "Image_File_Location": "./bf4_stats_files/PKP_Pecheneg.png"
@@ -2625,7 +2625,7 @@
         "Weapon": {
             "Name": "JS2",
             "Rate_of_Fire": "900RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "320 m/s",
             "Bullet_Drop": "480m",
             "Image_File_Location": "./bf4_stats_files/JS2.png"
@@ -2668,7 +2668,7 @@
         "Weapon": {
             "Name": "MP7",
             "Rate_of_Fire": "950RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "420 m/s",
             "Bullet_Drop": "630m",
             "Image_File_Location": "./bf4_stats_files/MP7.png"
@@ -2711,7 +2711,7 @@
         "Weapon": {
             "Name": "MPX",
             "Rate_of_Fire": "850RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "340 m/s",
             "Bullet_Drop": "510m",
             "Image_File_Location": "./bf4_stats_files/MPX.png"
@@ -2754,7 +2754,7 @@
         "Weapon": {
             "Name": "MX4",
             "Rate_of_Fire": "830RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "390 m/s",
             "Bullet_Drop": "585m",
             "Image_File_Location": "./bf4_stats_files/MX4.png"
@@ -2797,7 +2797,7 @@
         "Weapon": {
             "Name": "P90",
             "Rate_of_Fire": "900RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "460 m/s",
             "Bullet_Drop": "690m",
             "Image_File_Location": "./bf4_stats_files/P90.png"
@@ -2840,7 +2840,7 @@
         "Weapon": {
             "Name": "SR-2",
             "Rate_of_Fire": "900RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "310 m/s",
             "Bullet_Drop": "465m",
             "Image_File_Location": "./bf4_stats_files/SR-2.png"
@@ -2883,7 +2883,7 @@
         "Weapon": {
             "Name": "UMP-9",
             "Rate_of_Fire": "700RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "420 m/s",
             "Bullet_Drop": "630m",
             "Image_File_Location": "./bf4_stats_files/UMP-9.png"
@@ -2926,7 +2926,7 @@
         "Weapon": {
             "Name": "AS VAL",
             "Rate_of_Fire": "900RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "300 m/s",
             "Bullet_Drop": "600m",
             "Image_File_Location": "./bf4_stats_files/AS_VAL.png"
@@ -2969,7 +2969,7 @@
         "Weapon": {
             "Name": "UMP-45",
             "Rate_of_Fire": "600RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "320 m/s",
             "Bullet_Drop": "480m",
             "Image_File_Location": "./bf4_stats_files/UMP-45.png"
@@ -3012,7 +3012,7 @@
         "Weapon": {
             "Name": "CBJ-MS",
             "Rate_of_Fire": "700RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "520 m/s",
             "Bullet_Drop": "780m",
             "Image_File_Location": "./bf4_stats_files/CBJ-MS.png"
@@ -3055,7 +3055,7 @@
         "Weapon": {
             "Name": "PP-2000",
             "Rate_of_Fire": "650RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "450 m/s",
             "Bullet_Drop": "675m",
             "Image_File_Location": "./bf4_stats_files/PP-2000.png"
@@ -3098,7 +3098,7 @@
         "Weapon": {
             "Name": "CZ-3A1",
             "Rate_of_Fire": "1000RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "370 m/s",
             "Bullet_Drop": "555m",
             "Image_File_Location": "./bf4_stats_files/CZ-3A1.png"
@@ -3141,7 +3141,7 @@
         "Weapon": {
             "Name": "PDW-R",
             "Rate_of_Fire": "750RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "460 m/s",
             "Bullet_Drop": "690m",
             "Image_File_Location": "./bf4_stats_files/PDW-R.png"
@@ -3184,7 +3184,7 @@
         "Weapon": {
             "Name": "AK-12",
             "Rate_of_Fire": "650RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
             "Image_File_Location": "./bf4_stats_files/AK-12.png"
@@ -3227,7 +3227,7 @@
         "Weapon": {
             "Name": "M416",
             "Rate_of_Fire": "750RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
             "Image_File_Location": "./bf4_stats_files/M416.png"
@@ -3270,7 +3270,7 @@
         "Weapon": {
             "Name": "AR160",
             "Rate_of_Fire": "700RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "650 m/s",
             "Bullet_Drop": "975m",
             "Image_File_Location": "./bf4_stats_files/AR160.png"
@@ -3313,7 +3313,7 @@
         "Weapon": {
             "Name": "CZ-805",
             "Rate_of_Fire": "700RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "620 m/s",
             "Bullet_Drop": "930m",
             "Image_File_Location": "./bf4_stats_files/CZ-805.png"
@@ -3356,7 +3356,7 @@
         "Weapon": {
             "Name": "F2000",
             "Rate_of_Fire": "850RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
             "Image_File_Location": "./bf4_stats_files/F2000.png"
@@ -3399,7 +3399,7 @@
         "Weapon": {
             "Name": "FAMAS",
             "Rate_of_Fire": "1000RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "630 m/s",
             "Bullet_Drop": "945m",
             "Image_File_Location": "./bf4_stats_files/FAMAS.png"
@@ -3442,7 +3442,7 @@
         "Weapon": {
             "Name": "L85A2",
             "Rate_of_Fire": "750RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "640 m/s",
             "Bullet_Drop": "960m",
             "Image_File_Location": "./bf4_stats_files/L85A2.png"
@@ -3485,7 +3485,7 @@
         "Weapon": {
             "Name": "M16A4",
             "Rate_of_Fire": "800RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "650 m/s",
             "Bullet_Drop": "975m",
             "Image_File_Location": "./bf4_stats_files/M16A4.png"
@@ -3528,7 +3528,7 @@
         "Weapon": {
             "Name": "SAR-21",
             "Rate_of_Fire": "600RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "650 m/s",
             "Bullet_Drop": "975m",
             "Image_File_Location": "./bf4_stats_files/SAR-21.png"
@@ -3571,7 +3571,7 @@
         "Weapon": {
             "Name": "AEK-971",
             "Rate_of_Fire": "900RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "580 m/s",
             "Bullet_Drop": "870m",
             "Image_File_Location": "./bf4_stats_files/AEK-971.png"
@@ -3614,7 +3614,7 @@
         "Weapon": {
             "Name": "QBZ-95-1",
             "Rate_of_Fire": "650RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "630 m/s",
             "Bullet_Drop": "945m",
             "Image_File_Location": "./bf4_stats_files/QBZ-95-1.png"
@@ -3657,7 +3657,7 @@
         "Weapon": {
             "Name": "SCAR-H",
             "Rate_of_Fire": "620RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "410 m/s",
             "Bullet_Drop": "615m",
             "Image_File_Location": "./bf4_stats_files/SCAR-H.png"
@@ -3700,7 +3700,7 @@
         "Weapon": {
             "Name": "Bulldog",
             "Rate_of_Fire": "700RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "450 m/s",
             "Bullet_Drop": "675m",
             "Image_File_Location": "./bf4_stats_files/Bulldog.png"
@@ -3743,7 +3743,7 @@
         "Weapon": {
             "Name": "AUG A3",
             "Rate_of_Fire": "700RPM",
-            "Muzzle_Velocity": "15m/sÂ²",
+            "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "670 m/s",
             "Bullet_Drop": "1005m",
             "Image_File_Location": "./bf4_stats_files/AUG_A3.png"

@@ -37,7 +37,7 @@ router.get('/', function(req, res) {
 
 router.get('/weapons', function(req, res) {
   db.getWeapons().then(function(weapons) {
-    res.send(weapons.toJSON())
+    res.render('queries', {data: weapons.toJSON()})
   }).catch(function(err) {
     res.send(err)
   })
