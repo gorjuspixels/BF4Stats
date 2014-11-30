@@ -15,6 +15,7 @@ var passport = require('passport'),
 var routes = require('./routes/index');
 var users = require('./routes/users');
 var api = require('./routes/api');
+var db = require('./db')
 
 var app = express();
 
@@ -97,6 +98,12 @@ app.post('/login', passport.authenticate('local',
     failureRedirect: '/'
   }
 ))
+
+app.get('/queries', function(req, res) {
+  db.query1().then(function(weapons) {
+    res.render('queries', {query1: weapons})
+  })
+})
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

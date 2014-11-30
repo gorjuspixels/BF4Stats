@@ -154,6 +154,19 @@ exports.createTables = function() {
   })
 }
 
+
+exports.query1 = function() {
+  return knex.from('weapon')
+    .innerJoin('damage', 'weapon.id', 'damage.id')
+    .join('reload', 'weapon.id', 'reload.id')
+    .select(['Name', 'Max_damage', 'Min_damage', 'Mag_size'])
+    .orderBy('Name')
+    .then(function(weapons) {
+      return Promise.resolve(weapons)
+    })
+
+}
+
 exports.getWeapons = function() {
   return new Weapon().fetchAll()
     .then(function(weapons) {
@@ -183,52 +196,52 @@ exports.createDefaultWeapons = function() {
   console.log('Creating default weapons...')
   var weaponData = require('./data.json')
 
-  for (var i in weaponData) {
-    new Weapon({
-      Name: weaponData[i].Weapon['Name'],
-      Rate_of_fire: weaponData[i].Weapon['Rate_of_Fire'],
-      Muzzle_velocity: weaponData[i].Weapon['Muzzle_Velocity'],
-      Max_dist: weaponData[i].Weapon['Max_Distance'],
-      Bullet_drop: weaponData[i].Weapon['Bullet_Drop'],
-      Img_file_loc: weaponData[i].Weapon['Image_File_Location']
+  return Promise.each(weaponData, function(data) {
+    return new Weapon({
+      Name: data.Weapon['Name'],
+      Rate_of_fire: data.Weapon['Rate_of_Fire'],
+      Muzzle_velocity: data.Weapon['Muzzle_Velocity'],
+      Max_dist: data.Weapon['Max_Distance'],
+      Bullet_drop: data.Weapon['Bullet_Drop'],
+      Img_file_loc: data.Weapon['Image_File_Location']
     }).save()
     .then(function() {
       new Damage({
-            Max_damage: weaponData[i].Damage['Max_Damage'],
-            Min_damage: weaponData[i].Damage['Min_Damage'],
-            Drop_off_start: weaponData[i].Damage['Drop-off_start'],
-            Drop_off_end: weaponData[i].Damage['Drop-off_end']
+            Max_damage: data.Damage['Max_Damage'],
+            Min_damage: data.Damage['Min_Damage'],
+            Drop_off_start: data.Damage['Drop-off_start'],
+            Drop_off_end: data.Damage['Drop-off_end']
           }).save()
     })
     .then(function() {
       new Reload({
-            Time_left: weaponData[i].Reload['Reload_time_left'],
-            Time_empty: weaponData[i].Reload['Reload_time_empty'],
-            Time_threshold:weaponData[i].Reload['Reload_time_threshold'],
-            Mag_size: weaponData[i].Reload['mag_size']
+            Time_left: data.Reload['Reload_time_left'],
+            Time_empty: data.Reload['Reload_time_empty'],
+            Time_threshold:data.Reload['Reload_time_threshold'],
+            Mag_size: data.Reload['mag_size']
           }).save()
     })
     .then(function() {
       new Recoil({
-            up: weaponData[i].Recoil['Recoil_Upwards'],
-            left: weaponData[i].Recoil['Recoil_Left'],
-            right: weaponData[i].Recoil['Recoil_Right'],
-            dec: weaponData[i].Recoil['Recoil_Decrease'],
-            First_shot_mult: weaponData[i].Recoil['Fst_Short_Multiplier']
+            up: data.Recoil['Recoil_Upwards'],
+            left: data.Recoil['Recoil_Left'],
+            right: data.Recoil['Recoil_Right'],
+            dec: data.Recoil['Recoil_Decrease'],
+            First_shot_mult: data.Recoil['Fst_Short_Multiplier']
           }).save()
     })
     .then(function() {
       new Spread({
-            Ads_nmm: weaponData[i].Spread['ADS_Spread_Not_moving_minimum'],
-            Ads_mm: weaponData[i].Spread['ADS_Spread_moving_minimum'],
-            Hip_s_nmm: weaponData[i].Spread['HIP_Spread_Stand_Not_Moving_minimum'],
-            Hip_c_nmm: weaponData[i].Spread['HIP_Spread_Crouch_Not_Moving_minimum'],
-            Hip_p_nmm: weaponData[i].Spread['HIP_Spread_Prone_Not_Moving_minimum'],
-            Hip_s_mm: weaponData[i].Spread['HIP_Spread_Stand_Moving_minimum'],
-            Hip_c_mm: weaponData[i].Spread['HIP_Spread_Crouch_Moving_minimum'],
-            Hip_p_mm: weaponData[i].Spread['HIP_Spread_Prone_Moving_minimum'],
-            Inc: weaponData[i].Spread['Spread_Increase_per_Shot'],
-            Dec: weaponData[i].Spread['Spread_Decrease_per_Shot']
+            Ads_nmm: data.Spread['ADS_Spread_Not_moving_minimum'],
+            Ads_mm: data.Spread['ADS_Spread_moving_minimum'],
+            Hip_s_nmm: data.Spread['HIP_Spread_Stand_Not_Moving_minimum'],
+            Hip_c_nmm: data.Spread['HIP_Spread_Crouch_Not_Moving_minimum'],
+            Hip_p_nmm: data.Spread['HIP_Spread_Prone_Not_Moving_minimum'],
+            Hip_s_mm: data.Spread['HIP_Spread_Stand_Moving_minimum'],
+            Hip_c_mm: data.Spread['HIP_Spread_Crouch_Moving_minimum'],
+            Hip_p_mm: data.Spread['HIP_Spread_Prone_Moving_minimum'],
+            Inc: data.Spread['Spread_Increase_per_Shot'],
+            Dec: data.Spread['Spread_Decrease_per_Shot']
           }).save()
     })
     .then(function() {
@@ -237,7 +250,7 @@ exports.createDefaultWeapons = function() {
             count: count
           }).save()
     })
-  }
+  })
 }
 
 exports.getUsers = function() {
