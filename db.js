@@ -231,10 +231,12 @@ exports.createDefaultWeapons = function() {
             Dec: weaponData[i].Spread['Spread_Decrease_per_Shot']
           }).save()
     })
-
-    // new Supply({
-
-    // }).save()
+    .then(function() {
+      var count = Math.floor(Math.random() * 500)
+      new Supply({
+            count: count
+          }).save()
+    })
   }
 }
 
