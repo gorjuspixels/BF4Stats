@@ -33,9 +33,15 @@ var Supply = bookshelf.Model.extend({
 });
 
 exports.createTables = function() {
-  knex.schema.hasTable('weapon').then(function(exists) {
+  var self = this
+  var shouldCreateWeapons = false
+  var tableName = 'weapon'
+
+  knex.schema.hasTable(tableName).then(function(exists) {
     if (!exists) {
-      return knex.schema.createTable('weapon', function(t) {
+      shouldCreateWeapons = true
+      return knex.schema.createTable(tableName, function(t) {
+        console.log('Creating', tableName, 'table...')
         t.increments('id').primary();
         t.string('Name', 512);
         t.string('Rate_of_fire', 512);
@@ -47,9 +53,11 @@ exports.createTables = function() {
     }
   })
   .then(function() {
-    knex.schema.hasTable('user').then(function(exists) {
+    var tableName = 'user'
+    return knex.schema.hasTable(tableName).then(function(exists) {
       if (!exists) {
-        return knex.schema.createTable('user', function(t) {
+        return knex.schema.createTable(tableName, function(t) {
+          console.log('Creating', tableName, 'table...')
           t.increments('id').primary();
           t.string('local_email', 500)
           t.string('local_password', 500)
@@ -62,10 +70,12 @@ exports.createTables = function() {
     });
   })
   .then(function() {
-    knex.schema.hasTable('damage').then(function(exists) {
+    var tableName = 'damage'
+    return knex.schema.hasTable(tableName).then(function(exists) {
       if (!exists) {
-        return knex.schema.createTable('damage', function(t) {
-          t.integer('id').references('id').inTable('weapon')
+        return knex.schema.createTable(tableName, function(t) {
+          console.log('Creating', tableName, 'table...')
+          t.increments('id').references('id').inTable('weapon')
           t.string('Max_damage', 512)
           t.string('Min_damage', 512)
           t.string('Drop_off_start', 512)
@@ -75,10 +85,12 @@ exports.createTables = function() {
     })
   })
   .then(function() {
-    knex.schema.hasTable('reload').then(function(exists) {
+    var tableName = 'reload'
+    return knex.schema.hasTable(tableName).then(function(exists) {
       if (!exists) {
-        return knex.schema.createTable('reload', function(t) {
-          t.integer('id').references('id').inTable('weapon')
+        return knex.schema.createTable(tableName, function(t) {
+          console.log('Creating', tableName, 'table...')
+          t.increments('id').references('id').inTable('weapon')
           t.string('Time_left', 512)
           t.string('Time_empty', 512)
           t.string('Time_threshold', 512)
@@ -88,10 +100,12 @@ exports.createTables = function() {
     })
   })
   .then(function() {
-    knex.schema.hasTable('recoil').then(function(exists) {
+    var tableName = 'recoil'
+    return knex.schema.hasTable(tableName).then(function(exists) {
       if (!exists) {
-        return knex.schema.createTable('recoil', function(t) {
-          t.integer('id').references('id').inTable('weapon')
+        return knex.schema.createTable(tableName, function(t) {
+          console.log('Creating', tableName, 'table...')
+          t.increments('id').references('id').inTable('weapon')
           t.string('up', 512)
           t.string('left', 512)
           t.string('right', 512)
@@ -102,10 +116,12 @@ exports.createTables = function() {
     })
   })
   .then(function() {
-    knex.schema.hasTable('spread').then(function(exists) {
+    var tableName = 'spread'
+    return knex.schema.hasTable(tableName).then(function(exists) {
       if (!exists) {
-        return knex.schema.createTable('spread', function(t) {
-          t.integer('id').references('id').inTable('weapon')
+        return knex.schema.createTable(tableName, function(t) {
+          console.log('Creating', tableName, 'table...')
+          t.increments('id').references('id').inTable('weapon')
           t.string('Ads_nmm', 512)
           t.string('Ads_mm', 512)
           t.string('Hip_s_nmm', 512)
@@ -121,14 +137,20 @@ exports.createTables = function() {
     })
   })
   .then(function() {
-    knex.schema.hasTable('supply').then(function(exists) {
+    var tableName = 'supply'
+    return knex.schema.hasTable(tableName).then(function(exists) {
       if (!exists) {
-        return knex.schema.createTable('supply', function(t) {
-          t.integer('id').references('id').inTable('weapon')
+        return knex.schema.createTable(tableName, function(t) {
+          console.log('Creating', tableName, 'table...')
+          t.increments('id').references('id').inTable('weapon')
           t.integer('count')
         });
       }
     })
+  })
+  .then(function(promise) {
+    if (shouldCreateWeapons)
+      return self.createDefaultWeapons()
   })
 }
 
@@ -158,7 +180,8 @@ exports.createWeapons = function(weapons) {
 }
 
 exports.createDefaultWeapons = function() {
-  var weaponData = require('../data.json')
+  console.log('Creating default weapons...')
+  var weaponData = require('./data.json')
 
   for (var i in weaponData) {
     new Weapon({
@@ -169,48 +192,50 @@ exports.createDefaultWeapons = function() {
       Bullet_drop: weaponData[i].Weapon['Bullet_Drop'],
       Img_file_loc: weaponData[i].Weapon['Image_File_Location']
     }).save()
-
-    new Damage({
-      Max_damage: weaponData[i].Damage['Max_Damage'],
-      Min_damage: weaponData[i].Damage['Min_Damage'],
-      Drop_off_start: weaponData[i].Damage['Drop-off_start'],
-      Drop_off_end: weaponData[i].Damage['Drop-off_end']
-    }).save()
-
-    new Reload({
-      Time_left: weaponData[i].Reload['Reload_time_left'],
-      Time_empty: weaponData[i].Reload['Reload_time_empty'],
-      Time_threshold:weaponData[i].Reload['Reload_time_threshold'],
-      Mag_size: weaponData[i].Reload['mag_size']
-    }).save()
-
-    new Recoil({
-      up: weaponData[i].Recoil['Recoil_Upwards'],
-      left: weaponData[i].Recoil['Recoil_Left'],
-      right: weaponData[i].Recoil['Recoil_Right'],
-      dec: weaponData[i].Recoil['Recoil_Decrease'],
-      First_shot_mult: weaponData[i].Recoil['Fst_Short_Multiplier']
-    }).save()
-
-    new Spread({
-      Ads_nmm: weaponData[i].Spread['ADS_Spread_Not_moving_minimum'],
-      Hip_s_nmm: weaponData[i].Spread['HIP_Spread_Stand_Not_Moving_minimum'],
-      Hip_c_nmm: weaponData[i].Spread['HIP_Spread_Crouch_Not_Moving_minimum'],
-      Hip_p_nmm: weaponData[i].Spread['HIP_Spread_Prone_Not_Moving_minimum'],
-      Hip_s_mm: weaponData[i].Spread['HIP_Spread_Stand_Moving_minimum'],
-      Hip_c_mm: weaponData[i].Spread['HIP_Spread_Crouch_Moving_minimum'],
-      Hip_p_mm: weaponData[i].Spread['HIP_Spread_Prone_Moving_minimum'],
-      Inc: weaponData[i].Spread['Spread_Increase_per_Shot'],
-      Dec: weaponData[i].Spread['Spread_Decrease_per_Shot']
-    }).save()
+    .then(function() {
+      new Damage({
+            Max_damage: weaponData[i].Damage['Max_Damage'],
+            Min_damage: weaponData[i].Damage['Min_Damage'],
+            Drop_off_start: weaponData[i].Damage['Drop-off_start'],
+            Drop_off_end: weaponData[i].Damage['Drop-off_end']
+          }).save()
+    })
+    .then(function() {
+      new Reload({
+            Time_left: weaponData[i].Reload['Reload_time_left'],
+            Time_empty: weaponData[i].Reload['Reload_time_empty'],
+            Time_threshold:weaponData[i].Reload['Reload_time_threshold'],
+            Mag_size: weaponData[i].Reload['mag_size']
+          }).save()
+    })
+    .then(function() {
+      new Recoil({
+            up: weaponData[i].Recoil['Recoil_Upwards'],
+            left: weaponData[i].Recoil['Recoil_Left'],
+            right: weaponData[i].Recoil['Recoil_Right'],
+            dec: weaponData[i].Recoil['Recoil_Decrease'],
+            First_shot_mult: weaponData[i].Recoil['Fst_Short_Multiplier']
+          }).save()
+    })
+    .then(function() {
+      new Spread({
+            Ads_nmm: weaponData[i].Spread['ADS_Spread_Not_moving_minimum'],
+            Ads_mm: weaponData[i].Spread['ADS_Spread_moving_minimum'],
+            Hip_s_nmm: weaponData[i].Spread['HIP_Spread_Stand_Not_Moving_minimum'],
+            Hip_c_nmm: weaponData[i].Spread['HIP_Spread_Crouch_Not_Moving_minimum'],
+            Hip_p_nmm: weaponData[i].Spread['HIP_Spread_Prone_Not_Moving_minimum'],
+            Hip_s_mm: weaponData[i].Spread['HIP_Spread_Stand_Moving_minimum'],
+            Hip_c_mm: weaponData[i].Spread['HIP_Spread_Crouch_Moving_minimum'],
+            Hip_p_mm: weaponData[i].Spread['HIP_Spread_Prone_Moving_minimum'],
+            Inc: weaponData[i].Spread['Spread_Increase_per_Shot'],
+            Dec: weaponData[i].Spread['Spread_Decrease_per_Shot']
+          }).save()
+    })
 
     // new Supply({
 
     // }).save()
   }
-  
-
-  db.createWeapons(weaponData)
 }
 
 exports.getUsers = function() {
