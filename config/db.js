@@ -8,4 +8,4 @@ module.exports = {
     charset: 'utf8',
     port: 5432
   }
-}z
+}
