@@ -28,3 +28,36 @@ block content
               td #{ weapon.Max_damage }
               td #{ weapon.Min_damage }
               td #{ weapon.Mag_size }
+
+      br
+      br
+
+      h2 Query 2
+      p Lists the weapon’s data, which has the largest rate of fire than all other weapons
+
+      pre
+        code.language-sql.
+          SELECT *
+          FROM WEAPON as w1
+          WHERE Rate_of_fire >= ALL (
+                                      SELECT Rate_of_fire
+                                      FROM WEAPON as w2
+                                      WHERE w1.Muzzle_velocity = w2.Muzzle_velocity
+                                      GROUP BY Rate_of_fire
+                                    );
+      table.table.table-hover
+        thead
+          tr
+            th Name
+            th Rate of Fire (RPM)
+            th Muzzle Velocity
+            th Max Distance
+            th Bullet Drop
+        tbody
+          each weapon in query2
+            tr
+              td #{ weapon.Name }
+              td #{ weapon.Rate_of_fire }
+              td #{ weapon.Muzzle_velocity }
+              td #{ weapon.Max_dist }
+              td #{ weapon.Bullet_drop }

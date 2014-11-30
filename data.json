@@ -1,7 +1,7 @@
 [{
         "Weapon": {
             "Name": "M9",
-            "Rate_of_Fire": "400RPM",
+            "Rate_of_Fire": 400,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "380 m/s",
             "Bullet_Drop": "570m",
@@ -44,7 +44,7 @@
     {
         "Weapon": {
             "Name": "CZ-75",
-            "Rate_of_Fire": "360RPM",
+            "Rate_of_Fire": 360,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "380 m/s",
             "Bullet_Drop": "570m",
@@ -87,7 +87,7 @@
     {
         "Weapon": {
             "Name": "FN57",
-            "Rate_of_Fire": "455RPM",
+            "Rate_of_Fire": 455,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "430 m/s",
             "Bullet_Drop": "645m",
@@ -130,7 +130,7 @@
     {
         "Weapon": {
             "Name": "93R",
-            "Rate_of_Fire": "900RPM",
+            "Rate_of_Fire": 900,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "380 m/s",
             "Bullet_Drop": "570m",
@@ -173,7 +173,7 @@
     {
         "Weapon": {
             "Name": "P226",
-            "Rate_of_Fire": "400RPM",
+            "Rate_of_Fire": 400,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "350 m/s",
             "Bullet_Drop": "525m",
@@ -216,7 +216,7 @@
     {
         "Weapon": {
             "Name": "SW40",
-            "Rate_of_Fire": "220RPM",
+            "Rate_of_Fire": 220,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "400 m/s",
             "Bullet_Drop": "600m",
@@ -259,7 +259,7 @@
     {
         "Weapon": {
             "Name": "Compact 45",
-            "Rate_of_Fire": "320RPM",
+            "Rate_of_Fire": 320,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "270 m/s",
             "Bullet_Drop": "405m",
@@ -302,7 +302,7 @@
     {
         "Weapon": {
             "Name": "M1911",
-            "Rate_of_Fire": "310RPM",
+            "Rate_of_Fire": 310,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "310 m/s",
             "Bullet_Drop": "465m",
@@ -345,7 +345,7 @@
     {
         "Weapon": {
             "Name": "MP443",
-            "Rate_of_Fire": "380RPM",
+            "Rate_of_Fire": 380,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "320 m/s",
             "Bullet_Drop": "480m",
@@ -388,7 +388,7 @@
     {
         "Weapon": {
             "Name": "QSZ-92",
-            "Rate_of_Fire": "455RPM",
+            "Rate_of_Fire": 455,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "340 m/s",
             "Bullet_Drop": "510m",
@@ -431,7 +431,7 @@
     {
         "Weapon": {
             "Name": "Unica 6",
-            "Rate_of_Fire": "210RPM",
+            "Rate_of_Fire": 210,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "440 m/s",
             "Bullet_Drop": "660m",
@@ -474,7 +474,7 @@
     {
         "Weapon": {
             "Name": "G18",
-            "Rate_of_Fire": "900RPM",
+            "Rate_of_Fire": 900,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "380 m/s",
             "Bullet_Drop": "570m",
@@ -517,7 +517,7 @@
     {
         "Weapon": {
             "Name": "MP412 Rex",
-            "Rate_of_Fire": "180RPM",
+            "Rate_of_Fire": 180,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "400 m/s",
             "Bullet_Drop": "600m",
@@ -560,7 +560,7 @@
     {
         "Weapon": {
             "Name": "44 Magnum",
-            "Rate_of_Fire": "150RPM",
+            "Rate_of_Fire": 150,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "460 m/s",
             "Bullet_Drop": "690m",
@@ -603,7 +603,7 @@
     {
         "Weapon": {
             "Name": "Deagle 44",
-            "Rate_of_Fire": "220RPM",
+            "Rate_of_Fire": 220,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "320 m/s",
             "Bullet_Drop": "480m",
@@ -646,7 +646,7 @@
     {
         "Weapon": {
             "Name": "RFB",
-            "Rate_of_Fire": "260RPM",
+            "Rate_of_Fire": 260,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "3000m",
@@ -689,7 +689,7 @@
     {
         "Weapon": {
             "Name": "SKS",
-            "Rate_of_Fire": "333RPM",
+            "Rate_of_Fire": 333,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "490 m/s",
             "Bullet_Drop": "2450m",
@@ -732,7 +732,7 @@
     {
         "Weapon": {
             "Name": "MK11 MOD 0",
-            "Rate_of_Fire": "260RPM",
+            "Rate_of_Fire": 260,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "640 m/s",
             "Bullet_Drop": "3200m",
@@ -775,7 +775,7 @@
     {
         "Weapon": {
             "Name": "QBU-88",
-            "Rate_of_Fire": "310RPM",
+            "Rate_of_Fire": 310,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "670 m/s",
             "Bullet_Drop": "3350m",
@@ -818,7 +818,7 @@
     {
         "Weapon": {
             "Name": "SVD-12",
-            "Rate_of_Fire": "260RPM",
+            "Rate_of_Fire": 260,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "590 m/s",
             "Bullet_Drop": "2950m",
@@ -861,7 +861,7 @@
     {
         "Weapon": {
             "Name": "M39 EMR",
-            "Rate_of_Fire": "300RPM",
+            "Rate_of_Fire": 300,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "650 m/s",
             "Bullet_Drop": "3250m",
@@ -904,7 +904,7 @@
     {
         "Weapon": {
             "Name": "SCAR-H SV",
-            "Rate_of_Fire": "260RPM",
+            "Rate_of_Fire": 260,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "620 m/s",
             "Bullet_Drop": "3100m",
@@ -947,7 +947,7 @@
     {
         "Weapon": {
             "Name": "ACE 53 SV",
-            "Rate_of_Fire": "260RPM",
+            "Rate_of_Fire": 260,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "580 m/s",
             "Bullet_Drop": "2900m",
@@ -990,7 +990,7 @@
     {
         "Weapon": {
             "Name": "A-91",
-            "Rate_of_Fire": "800RPM",
+            "Rate_of_Fire": 800,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "470 m/s",
             "Bullet_Drop": "705m",
@@ -1033,7 +1033,7 @@
     {
         "Weapon": {
             "Name": "ACW-R",
-            "Rate_of_Fire": "880RPM",
+            "Rate_of_Fire": 880,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "500 m/s",
             "Bullet_Drop": "750m",
@@ -1076,7 +1076,7 @@
     {
         "Weapon": {
             "Name": "AK 5C",
-            "Rate_of_Fire": "700RPM",
+            "Rate_of_Fire": 700,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "630 m/s",
             "Bullet_Drop": "945m",
@@ -1119,7 +1119,7 @@
     {
         "Weapon": {
             "Name": "G36C",
-            "Rate_of_Fire": "650RPM",
+            "Rate_of_Fire": 650,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "550 m/s",
             "Bullet_Drop": "825m",
@@ -1162,7 +1162,7 @@
     {
         "Weapon": {
             "Name": "M4",
-            "Rate_of_Fire": "800RPM",
+            "Rate_of_Fire": 800,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "580 m/s",
             "Bullet_Drop": "870m",
@@ -1205,7 +1205,7 @@
     {
         "Weapon": {
             "Name": "AKU-12",
-            "Rate_of_Fire": "680RPM",
+            "Rate_of_Fire": 680,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "500 m/s",
             "Bullet_Drop": "750m",
@@ -1248,7 +1248,7 @@
     {
         "Weapon": {
             "Name": "MTAR-21",
-            "Rate_of_Fire": "900RPM",
+            "Rate_of_Fire": 900,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "540 m/s",
             "Bullet_Drop": "810m",
@@ -1291,7 +1291,7 @@
     {
         "Weapon": {
             "Name": "SG553",
-            "Rate_of_Fire": "830RPM",
+            "Rate_of_Fire": 830,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "470 m/s",
             "Bullet_Drop": "705m",
@@ -1334,7 +1334,7 @@
     {
         "Weapon": {
             "Name": "Type-95B-1",
-            "Rate_of_Fire": "650RPM",
+            "Rate_of_Fire": 650,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "540 m/s",
             "Bullet_Drop": "810m",
@@ -1377,7 +1377,7 @@
     {
         "Weapon": {
             "Name": "ACE 21 CQB",
-            "Rate_of_Fire": "770RPM",
+            "Rate_of_Fire": 770,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "440 m/s",
             "Bullet_Drop": "615m",
@@ -1420,7 +1420,7 @@
     {
         "Weapon": {
             "Name": "ACE 52 CQB",
-            "Rate_of_Fire": "650RPM",
+            "Rate_of_Fire": 650,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "400 m/s",
             "Bullet_Drop": "600m",
@@ -1463,7 +1463,7 @@
     {
         "Weapon": {
             "Name": "CS5",
-            "Rate_of_Fire": "63RPM",
+            "Rate_of_Fire": 63,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "400 m/s",
             "Bullet_Drop": "2000m",
@@ -1506,7 +1506,7 @@
     {
         "Weapon": {
             "Name": "GOL Magnum",
-            "Rate_of_Fire": "51RPM",
+            "Rate_of_Fire": 51,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "580 m/s",
             "Bullet_Drop": "2900m",
@@ -1549,7 +1549,7 @@
     {
         "Weapon": {
             "Name": "338-Recon",
-            "Rate_of_Fire": "48RPM",
+            "Rate_of_Fire": 48,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "520 m/s",
             "Bullet_Drop": "2600m",
@@ -1592,7 +1592,7 @@
     {
         "Weapon": {
             "Name": "AMR-2",
-            "Rate_of_Fire": "41RPM",
+            "Rate_of_Fire": 41,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "560 m/s",
             "Bullet_Drop": "2800m",
@@ -1635,7 +1635,7 @@
     {
         "Weapon": {
             "Name": "SRR-61",
-            "Rate_of_Fire": "40RPM",
+            "Rate_of_Fire": 40,
             "Muzzle_Velocity": "6m/s²",
             "Max_Distance": "620 m/s",
             "Bullet_Drop": "3100m",
@@ -1678,7 +1678,7 @@
     {
         "Weapon": {
             "Name": "M98B",
-            "Rate_of_Fire": "40RPM",
+            "Rate_of_Fire": 40,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "650 m/s",
             "Bullet_Drop": "3250m",
@@ -1721,7 +1721,7 @@
     {
         "Weapon": {
             "Name": "SV98",
-            "Rate_of_Fire": "50RPM",
+            "Rate_of_Fire": 50,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "520 m/s",
             "Bullet_Drop": "2600m",
@@ -1764,7 +1764,7 @@
     {
         "Weapon": {
             "Name": "FY-JS",
-            "Rate_of_Fire": "54RPM",
+            "Rate_of_Fire": 54,
             "Muzzle_Velocity": "6m/s²",
             "Max_Distance": "630 m/s",
             "Bullet_Drop": "3150m",
@@ -1807,7 +1807,7 @@
     {
         "Weapon": {
             "Name": "JNG-90",
-            "Rate_of_Fire": "41RPM",
+            "Rate_of_Fire": 41,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "670 m/s",
             "Bullet_Drop": "3350m",
@@ -1850,7 +1850,7 @@
     {
         "Weapon": {
             "Name": "L96A1",
-            "Rate_of_Fire": "48RPM",
+            "Rate_of_Fire": 48,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "550 m/s",
             "Bullet_Drop": "2750m",
@@ -1893,7 +1893,7 @@
     {
         "Weapon": {
             "Name": "M40A5",
-            "Rate_of_Fire": "60RPM",
+            "Rate_of_Fire": 60,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "480 m/s",
             "Bullet_Drop": "2400m",
@@ -1936,7 +1936,7 @@
     {
         "Weapon": {
             "Name": "M82A3",
-            "Rate_of_Fire": "125RPM",
+            "Rate_of_Fire": 125,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "560 m/s",
             "Bullet_Drop": "2800m",
@@ -1979,7 +1979,7 @@
     {
         "Weapon": {
             "Name": "SR338",
-            "Rate_of_Fire": "150RPM",
+            "Rate_of_Fire": 150,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "3000m",
@@ -2022,7 +2022,7 @@
     {
         "Weapon": {
             "Name": "CS-LR4",
-            "Rate_of_Fire": "46RPM",
+            "Rate_of_Fire": 46,
             "Muzzle_Velocity": "9.81m/s²",
             "Max_Distance": "630 m/s",
             "Bullet_Drop": "3150m",
@@ -2065,7 +2065,7 @@
     {
         "Weapon": {
             "Name": "Scout Elite",
-            "Rate_of_Fire": "63RPM",
+            "Rate_of_Fire": 63,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "640 m/s",
             "Bullet_Drop": "3200m",
@@ -2108,7 +2108,7 @@
     {
         "Weapon": {
             "Name": "AWS",
-            "Rate_of_Fire": "780RPM",
+            "Rate_of_Fire": 780,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "580 m/s",
             "Bullet_Drop": "870m",
@@ -2151,7 +2151,7 @@
     {
         "Weapon": {
             "Name": "MG4",
-            "Rate_of_Fire": "800RPM",
+            "Rate_of_Fire": 800,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "620 m/s",
             "Bullet_Drop": "930m",
@@ -2194,7 +2194,7 @@
     {
         "Weapon": {
             "Name": "LSAT",
-            "Rate_of_Fire": "650RPM",
+            "Rate_of_Fire": 650,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "620 m/s",
             "Bullet_Drop": "930m",
@@ -2237,7 +2237,7 @@
     {
         "Weapon": {
             "Name": "M240B",
-            "Rate_of_Fire": "650RPM",
+            "Rate_of_Fire": 650,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "610 m/s",
             "Bullet_Drop": "915m",
@@ -2280,7 +2280,7 @@
     {
         "Weapon": {
             "Name": "M249",
-            "Rate_of_Fire": "800RPM",
+            "Rate_of_Fire": 800,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "620 m/s",
             "Bullet_Drop": "930m",
@@ -2323,7 +2323,7 @@
     {
         "Weapon": {
             "Name": "M60E4",
-            "Rate_of_Fire": "570RPM",
+            "Rate_of_Fire": 570,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
@@ -2366,7 +2366,7 @@
     {
         "Weapon": {
             "Name": "QBB-95-1",
-            "Rate_of_Fire": "650RPM",
+            "Rate_of_Fire": 650,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
@@ -2409,7 +2409,7 @@
     {
         "Weapon": {
             "Name": "RPK-12",
-            "Rate_of_Fire": "600RPM",
+            "Rate_of_Fire": 600,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
@@ -2452,7 +2452,7 @@
     {
         "Weapon": {
             "Name": "RPK-74M",
-            "Rate_of_Fire": "600RPM",
+            "Rate_of_Fire": 600,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
@@ -2495,7 +2495,7 @@
     {
         "Weapon": {
             "Name": "Type-88 LMG",
-            "Rate_of_Fire": "700RPM",
+            "Rate_of_Fire": 700,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
@@ -2538,7 +2538,7 @@
     {
         "Weapon": {
             "Name": "U-100 MK5",
-            "Rate_of_Fire": "590RPM",
+            "Rate_of_Fire": 590,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "650 m/s",
             "Bullet_Drop": "975m",
@@ -2581,7 +2581,7 @@
     {
         "Weapon": {
             "Name": "PKP Pecheneg",
-            "Rate_of_Fire": "600RPM",
+            "Rate_of_Fire": 600,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "560 m/s",
             "Bullet_Drop": "840m",
@@ -2624,7 +2624,7 @@
     {
         "Weapon": {
             "Name": "JS2",
-            "Rate_of_Fire": "900RPM",
+            "Rate_of_Fire": 900,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "320 m/s",
             "Bullet_Drop": "480m",
@@ -2667,7 +2667,7 @@
     {
         "Weapon": {
             "Name": "MP7",
-            "Rate_of_Fire": "950RPM",
+            "Rate_of_Fire": 950,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "420 m/s",
             "Bullet_Drop": "630m",
@@ -2710,7 +2710,7 @@
     {
         "Weapon": {
             "Name": "MPX",
-            "Rate_of_Fire": "850RPM",
+            "Rate_of_Fire": 850,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "340 m/s",
             "Bullet_Drop": "510m",
@@ -2753,7 +2753,7 @@
     {
         "Weapon": {
             "Name": "MX4",
-            "Rate_of_Fire": "830RPM",
+            "Rate_of_Fire": 830,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "390 m/s",
             "Bullet_Drop": "585m",
@@ -2796,7 +2796,7 @@
     {
         "Weapon": {
             "Name": "P90",
-            "Rate_of_Fire": "900RPM",
+            "Rate_of_Fire": 900,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "460 m/s",
             "Bullet_Drop": "690m",
@@ -2839,7 +2839,7 @@
     {
         "Weapon": {
             "Name": "SR-2",
-            "Rate_of_Fire": "900RPM",
+            "Rate_of_Fire": 900,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "310 m/s",
             "Bullet_Drop": "465m",
@@ -2882,7 +2882,7 @@
     {
         "Weapon": {
             "Name": "UMP-9",
-            "Rate_of_Fire": "700RPM",
+            "Rate_of_Fire": 700,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "420 m/s",
             "Bullet_Drop": "630m",
@@ -2925,7 +2925,7 @@
     {
         "Weapon": {
             "Name": "AS VAL",
-            "Rate_of_Fire": "900RPM",
+            "Rate_of_Fire": 900,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "300 m/s",
             "Bullet_Drop": "600m",
@@ -2968,7 +2968,7 @@
     {
         "Weapon": {
             "Name": "UMP-45",
-            "Rate_of_Fire": "600RPM",
+            "Rate_of_Fire": 600,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "320 m/s",
             "Bullet_Drop": "480m",
@@ -3011,7 +3011,7 @@
     {
         "Weapon": {
             "Name": "CBJ-MS",
-            "Rate_of_Fire": "700RPM",
+            "Rate_of_Fire": 700,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "520 m/s",
             "Bullet_Drop": "780m",
@@ -3054,7 +3054,7 @@
     {
         "Weapon": {
             "Name": "PP-2000",
-            "Rate_of_Fire": "650RPM",
+            "Rate_of_Fire": 650,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "450 m/s",
             "Bullet_Drop": "675m",
@@ -3097,7 +3097,7 @@
     {
         "Weapon": {
             "Name": "CZ-3A1",
-            "Rate_of_Fire": "1000RPM",
+            "Rate_of_Fire": 1000,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "370 m/s",
             "Bullet_Drop": "555m",
@@ -3140,7 +3140,7 @@
     {
         "Weapon": {
             "Name": "PDW-R",
-            "Rate_of_Fire": "750RPM",
+            "Rate_of_Fire": 750,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "460 m/s",
             "Bullet_Drop": "690m",
@@ -3183,7 +3183,7 @@
     {
         "Weapon": {
             "Name": "AK-12",
-            "Rate_of_Fire": "650RPM",
+            "Rate_of_Fire": 650,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
@@ -3226,7 +3226,7 @@
     {
         "Weapon": {
             "Name": "M416",
-            "Rate_of_Fire": "750RPM",
+            "Rate_of_Fire": 750,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
@@ -3269,7 +3269,7 @@
     {
         "Weapon": {
             "Name": "AR160",
-            "Rate_of_Fire": "700RPM",
+            "Rate_of_Fire": 700,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "650 m/s",
             "Bullet_Drop": "975m",
@@ -3312,7 +3312,7 @@
     {
         "Weapon": {
             "Name": "CZ-805",
-            "Rate_of_Fire": "700RPM",
+            "Rate_of_Fire": 700,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "620 m/s",
             "Bullet_Drop": "930m",
@@ -3355,7 +3355,7 @@
     {
         "Weapon": {
             "Name": "F2000",
-            "Rate_of_Fire": "850RPM",
+            "Rate_of_Fire": 850,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "600 m/s",
             "Bullet_Drop": "900m",
@@ -3398,7 +3398,7 @@
     {
         "Weapon": {
             "Name": "FAMAS",
-            "Rate_of_Fire": "1000RPM",
+            "Rate_of_Fire": 1000,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "630 m/s",
             "Bullet_Drop": "945m",
@@ -3441,7 +3441,7 @@
     {
         "Weapon": {
             "Name": "L85A2",
-            "Rate_of_Fire": "750RPM",
+            "Rate_of_Fire": 750,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "640 m/s",
             "Bullet_Drop": "960m",
@@ -3484,7 +3484,7 @@
     {
         "Weapon": {
             "Name": "M16A4",
-            "Rate_of_Fire": "800RPM",
+            "Rate_of_Fire": 800,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "650 m/s",
             "Bullet_Drop": "975m",
@@ -3527,7 +3527,7 @@
     {
         "Weapon": {
             "Name": "SAR-21",
-            "Rate_of_Fire": "600RPM",
+            "Rate_of_Fire": 600,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "650 m/s",
             "Bullet_Drop": "975m",
@@ -3570,7 +3570,7 @@
     {
         "Weapon": {
             "Name": "AEK-971",
-            "Rate_of_Fire": "900RPM",
+            "Rate_of_Fire": 900,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "580 m/s",
             "Bullet_Drop": "870m",
@@ -3613,7 +3613,7 @@
     {
         "Weapon": {
             "Name": "QBZ-95-1",
-            "Rate_of_Fire": "650RPM",
+            "Rate_of_Fire": 650,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "630 m/s",
             "Bullet_Drop": "945m",
@@ -3656,7 +3656,7 @@
     {
         "Weapon": {
             "Name": "SCAR-H",
-            "Rate_of_Fire": "620RPM",
+            "Rate_of_Fire": 620,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "410 m/s",
             "Bullet_Drop": "615m",
@@ -3699,7 +3699,7 @@
     {
         "Weapon": {
             "Name": "Bulldog",
-            "Rate_of_Fire": "700RPM",
+            "Rate_of_Fire": 700,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "450 m/s",
             "Bullet_Drop": "675m",
@@ -3742,7 +3742,7 @@
     {
         "Weapon": {
             "Name": "AUG A3",
-            "Rate_of_Fire": "700RPM",
+            "Rate_of_Fire": 700,
             "Muzzle_Velocity": "15m/s²",
             "Max_Distance": "670 m/s",
             "Bullet_Drop": "1005m",

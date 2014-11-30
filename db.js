@@ -44,7 +44,7 @@ exports.createTables = function() {
         console.log('Creating', tableName, 'table...')
         t.increments('id').primary();
         t.string('Name', 512);
-        t.string('Rate_of_fire', 512);
+        t.integer('Rate_of_fire');
         t.string('Muzzle_velocity', 512);
         t.string('Max_dist', 512);
         t.string('Bullet_drop', 512);
@@ -164,7 +164,14 @@ exports.query1 = function() {
     .then(function(weapons) {
       return Promise.resolve(weapons)
     })
+}
 
+exports.query2 = function() {
+  return knex('weapon as w1')
+    .where('Rate_of_fire', '>=', knex.raw('ALL ( SELECT "Rate_of_fire" FROM weapon as w2 WHERE w1."Muzzle_velocity" = w2."Muzzle_velocity" GROUP BY "Rate_of_fire" )'))
+    .then(function(weapons) {
+      return Promise.resolve(weapons)
+    })
 }
 
 exports.getWeapons = function() {
