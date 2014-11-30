@@ -61,3 +61,37 @@ block content
               td #{ weapon.Muzzle_velocity }
               td #{ weapon.Max_dist }
               td #{ weapon.Bullet_drop }
+
+      br
+      br
+
+      h2 Query 3
+      p Lists weapons with maximum damage larger than 45.
+
+      pre
+        code.language-sql.
+          SELECT *
+          FROM DAMAGE AS D
+          WHERE 45 < ( SELECT Max_damage
+                       WHERE D.id = id );
+      table.table.table-hover
+        thead
+          tr
+            th Name
+            th Max Damage
+            th Min Damage
+            th Rate of Fire (RPM)
+            th Muzzle Velocity
+            th Max Distance
+            th Bullet Drop
+        tbody
+          each weapon in query3
+            tr
+              td #{ weapon.Name }
+              td #{ weapon.Max_damage }
+              td #{ weapon.Min_damage }
+              td #{ weapon.Rate_of_fire }
+              td #{ weapon.Muzzle_velocity }
+              td #{ weapon.Max_dist }
+              td #{ weapon.Bullet_drop }
+

@@ -18,6 +18,10 @@ router.get('/queries', function(req, res) {
   .then(function(weapons) {
       return queries.query2 = weapons
   })
+  .then(db.query3)
+  .then(function(weapons) {
+      return queries.query3 = weapons
+  })
   .then(function() {
     res.render('queries', queries)
   })

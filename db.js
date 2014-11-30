@@ -76,8 +76,8 @@ exports.createTables = function() {
         return knex.schema.createTable(tableName, function(t) {
           console.log('Creating', tableName, 'table...')
           t.increments('id').references('id').inTable('weapon')
-          t.string('Max_damage', 512)
-          t.string('Min_damage', 512)
+          t.float('Max_damage')
+          t.float('Min_damage')
           t.string('Drop_off_start', 512)
           t.string('Drop_off_end', 512)
         });
@@ -170,6 +170,16 @@ exports.query2 = function() {
   return knex('weapon as w1')
     .where('Rate_of_fire', '>=', knex.raw('ALL ( SELECT "Rate_of_fire" FROM weapon as w2 WHERE w1."Muzzle_velocity" = w2."Muzzle_velocity" GROUP BY "Rate_of_fire" )'))
     .then(function(weapons) {
+      return Promise.resolve(weapons)
+    })
+}
+
+exports.query3 = function() {
+  return knex('damage as d1')
+    .join('weapon', 'd1.id', 'weapon.id')
+    .where(45, '<', knex.raw('( SELECT "Max_damage" FROM damage WHERE d1.id = id )'))
+    .then(function(weapons) {
+      console.log(weapons)
       return Promise.resolve(weapons)
     })
 }
