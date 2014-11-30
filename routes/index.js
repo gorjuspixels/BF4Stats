@@ -27,4 +27,10 @@ router.get('/queries', function(req, res) {
   })
 });
 
+router.get('/players', function(req, res) {
+  db.getPlayerStats().then(function(playerStats) {
+    res.render('online_players', {data: playerStats.toJSON()})
+  })
+})
+
 module.exports = router;

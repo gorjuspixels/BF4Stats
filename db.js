@@ -32,6 +32,10 @@ var Supply = bookshelf.Model.extend({
   tableName: 'supply'
 });
 
+var PlayerStats = bookshelf.Model.extend({
+  tableName: 'player_stats'
+});
+
 exports.createTables = function() {
   var self = this
   var shouldCreateWeapons = false
@@ -144,6 +148,20 @@ exports.createTables = function() {
           console.log('Creating', tableName, 'table...')
           t.increments('id').references('id').inTable('weapon')
           t.integer('count')
+        });
+      }
+    })
+  })
+  .then(function() {
+    var tableName = 'player_stats'
+    return knex.schema.hasTable(tableName).then(function(exists) {
+      if (!exists) {
+        return knex.schema.createTable(tableName, function(t) {
+          console.log('Creating', tableName, 'table...')
+          t.increments('id').primary()
+          t.string('platform')
+          t.integer('online')
+          t.integer('24hourpeak')
         });
       }
     })
@@ -301,10 +319,46 @@ var createUser = exports.createUser = function(userData) {
   })
 }
 
-var getDemoQueries = exports.getDemoQueries = function() {
-  // bookshelf.knex('weapon')
-  //   .join('Comp', 'Comp.cId', '=', 'Inv.cId')
-  //   .where('Inv.id', 2)
-  //   .select()
-  //   .then(...)
+exports.getPlayerStats = function() {
+  return new PlayerStats().fetchAll()
+    .then(function(playerStats) {
+      return Promise.resolve(playerStats)
+    }).catch(function(error) {
+      console.log(error)
+      return Promise.reject(error)
+    });
+}
+
+exports.updatePlayers = function(data) {
+  var platforms = [data.pc, data.ps3, data.xbox, data.xone, data.ps4]
+
+  return new PlayerStats().fetchAll()
+    .then(function(stats) {
+      return Promise.each(platforms, function(plat) {
+        if (stats.length === 0) {
+          // create new stats
+          return new PlayerStats({
+            'platform': plat.label,
+            'online': plat.count,
+            '24hourpeak': plat.peak24
+          }).save()
+        }
+
+        // update
+        return knex('player_stats').where('platform', plat.label).update({
+          'online': plat.count,
+          '24hourpeak': plat.peak24
+        })
+      })
+    })
+    .then(function() {
+      return Promise.resolve()
+    })
+    .catch(function(error) {
+      console.log(error)
+      return Promise.reject(error)
+    });
+
+
+  
 }

@@ -1,0 +1,103 @@
+extends layout
+
+block content
+  .page
+    .view
+      h2 Online Players Stats
+
+      if data.length === 0
+        p#noData No data at the moment...
+      
+      table.table.table-hover
+        thead
+          tr
+            th Platform
+            th Currently Online
+            th 24 Hour Peak
+        tbody
+          each stats in data
+            tr
+              td #{ stats['platform'] }
+              td #{ stats['online'] }
+              td #{ stats['24hourpeak'] }
+  
+  script.
+    var data = '#{data}' || {}
+    
+    function poll() {
+      setTimeout(function() {
+        var req = new XMLHttpRequest()
+        req.overrideMimeType("application/json")
+        req.open('GET', 'http://api.bf4stats.com/api/onlinePlayers?output=json')
+        req.onload = function() {
+          var tmp = JSON.parse(this.response)
+          if (!isTheSame(tmp, data)) {
+            updateUI(tmp)
+            $.ajax({
+              url: '/api/playerstats',
+              type: 'POST',
+              data: JSON.stringify(tmp),
+              contentType: 'application/json; charset=utf-8',
+              success: function(e) {
+                console.log(e)
+              },
+              error: function(e) {
+                console.error(e)
+              }
+            })
+          }
+          poll()
+        };
+        req.send()
+      }, 5000);
+    };
+
+    poll()
+
+    var TableRow = function(rowData) {
+      var row = document.createElement('tr')
+
+      for (var prop in rowData) {
+        if (rowData.hasOwnProperty(prop)) {
+          var col = document.createElement('td')
+          var colText = document.createTextNode(rowData[prop])
+          col.appendChild(colText)
+          row.appendChild(col)
+        }
+      }
+      $('tbody').append(row);
+    }
+
+    function isTheSame(data1, data2) {
+      var same = true
+
+      for (var prop in data1) {
+        if (!data1[prop] || !data2[prop]) {
+          same = false
+          break
+        } else if (data1[prop].label !== data2[prop].label) {
+          same = false
+          break
+        } else if (data1[prop].count !== data2[prop].count) {
+          same = false
+          break
+        } else if (data1[prop].peak24 !== data2[prop].peak24) {
+          same = false
+          break
+        }
+      }
+
+      return same
+    }
+
+    function updateUI(tmp) {
+      data = tmp
+      $('#noData').remove()
+      $('tbody').empty()
+
+      new TableRow(data.pc)
+      new TableRow(data.ps3)
+      new TableRow(data.xbox)
+      new TableRow(data.xone)
+      new TableRow(data.ps4)
+    }
