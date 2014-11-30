@@ -1,0 +1,24 @@
+extends layout
+
+block content
+  div.page
+    div.view
+      h2 Queries
+      table.table.table-hover
+        thead
+          tr
+            th ID
+            th Name
+            th Rate of Fire
+            th Muzzle Velocity
+            th Max Distance
+            th Bullet Drop
+        tbody
+          each weapon in data
+            tr
+              td #{ weapon.id }
+              td #{ weapon.Name }
+              td #{ weapon.Rate_of_fire }
+              td #{ weapon.Muzzle_velocity }
+              td #{ weapon.Max_dist }
+              td #{ weapon.Bullet_drop }
