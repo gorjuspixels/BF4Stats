@@ -22,10 +22,6 @@ router.get('/queries', function(req, res) {
   .then(function(weapons) {
       return queries.query3 = weapons
   })
-  .then(db.query9)
-  .then(function(weapons) {
-      return queries.query9 = weapons
-  })
   .then(function() {
     res.render('queries', queries)
   })

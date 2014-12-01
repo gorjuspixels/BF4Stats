@@ -95,31 +95,3 @@ block content
               td #{ weapon.Max_dist }
               td #{ weapon.Bullet_drop }
 
-h2 Query 9
-      p Lists all weapons ordered by maximum damage in ascending order.
-
-      pre
-        code.language-sql.
-          SELECT*
-          FROMWEAPON
-          ORDERBY Max_damage ASC;
-      table.table.table-hover
-        thead
-          tr
-            th Name
-            th Max Damage
-            th Min Damage
-            th Rate of Fire (RPM)
-            th Muzzle Velocity
-            th Max Distance
-            th Bullet Drop
-        tbody
-          each weapon in query9
-            tr
-              td #{ weapon.Name }
-              td #{ weapon.Max_damage }
-              td #{ weapon.Min_damage }
-              td #{ weapon.Rate_of_fire }
-              td #{ weapon.Muzzle_velocity }
-              td #{ weapon.Max_dist }
-              td #{ weapon.Bullet_drop }
