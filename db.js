@@ -202,6 +202,85 @@ exports.query3 = function() {
     })
 }
 
+
+
+
+export.query4= function(){
+   return knex.from('weapon as w1, weapon as w2')
+   knex('weapon as w1')
+    .fullJoin('weapon', 'weapon.Max_distance', 'w1.Max_distance')
+     .where('weapon.id', '!=', 'w1.id')
+    .select(['*'])
+    .orderBy('Name')
+    .then(function(weapons) {
+      return Promise.resolve(weapons)
+    })
+}
+
+exports.query5 = function(){
+  return knex('weapon as w1')
+  .join('supply', 'w1.id', 'supply.id')
+  .where(1, '>', knex.raw('(SELECT "id" FROM SUPPLY WHERE count > 0)'))
+  .then(function(weapons){
+    return Promise.resolve(weapons)
+  })
+}
+
+export.query6= function(){
+   return knex.from('weapon')
+    .Join('supply', 'weapon.id', 'supply.id')
+    .where('Max_damage', '>', knex.raw(' ALL( SELECT "Max_damage" FROM weapon)'))
+    .and (count, '>', knex.raw('ALL(SELECT "count" FROM supply)'))
+    .select(['*'])
+    .orderBy('count', 'ASC')
+    .then(function(weapons) {
+      return Promise.resolve(weapons)
+    })
+}
+
+export.query7= function(){
+   return knex.from('weapon')
+    .Join('supply', 'weapon.id', 'supply.id')
+    .where('count' '>' '0')
+    .select(['Name', 'Id', 'Count'])
+    .orderBy('count' 'ASC')
+    .then(function(weapons) {
+      return Promise.resolve(weapons)
+    })
+}
+
+export.query8= function(){
+   return knex.from('weapon')
+    .Join('spread', 'weapon.id', 'spread.id')
+    .where('Max_damage', '>', knex.raw(' ALL( SELECT "Max_damage" FROM weapon)'))
+    .andWhere(Spread_Min, '<',  knex.raw('ALL (SELECT "Spread_Min" FROM spread)'))
+    .select(['*'])
+    .then(function(weapons) {
+      return Promise.resolve(weapons)
+    })
+}
+exports.query9 = function() {
+  return knex('weapon')
+  .orderBy('Max_damage')
+  .then(function(weapons) {
+      console.log(weapons)
+      return Promise.resolve(weapons)
+    })
+}
+
+exports.query10 = function() {
+  return knex('weapon')
+  .join('supply', 'weapon.id', 'supply.id')
+  .where('count', '=', '0')
+  orderBy('Name')
+  .then(function(weapons) {
+      console.log(weapons)
+      return Promise.resolve(weapons)
+    })
+}
+
+
+
 exports.getWeapons = function() {
   return new Weapon().fetchAll()
     .then(function(weapons) {
