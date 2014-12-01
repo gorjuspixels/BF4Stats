@@ -202,6 +202,15 @@ exports.query3 = function() {
     })
 }
 
+exports.query9 = function() {
+    return knex.from('weapon')
+    .orderBy('Max_damage')
+    .then(function(weapons) {
+      return Promise.resolve(weapons)
+    })
+}
+
+
 exports.getWeapons = function() {
   return new Weapon().fetchAll()
     .then(function(weapons) {
