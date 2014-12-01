@@ -2,6 +2,7 @@ var express = require('express')
 var router = express.Router()
 var Promise = require('bluebird')
 var passport = require('passport')
+var jwt = require('jwt-simple')
 var db = require('../db')
 var User = require('../models/User')
 
@@ -59,14 +60,7 @@ router.post('/weapons', function(req, res) {
   })
 })
 
-router.post('/playerstats', function(req, res) {
-  db.updatePlayers(req.body).then(function(msg) {
-    res.send(msg)
-  }).catch(function(err) {
-    console.log(err)
-    res.send(err)
-  })
-})
+
 
 router.get('/users', function(req, res) {
   db.getUsers().then(function(users) {
