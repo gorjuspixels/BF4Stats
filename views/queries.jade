@@ -74,6 +74,7 @@ block content
           FROM DAMAGE AS D
           WHERE 45 < ( SELECT Max_damage
                        WHERE D.id = id );
+
       table.table.table-hover
         thead
           tr
@@ -103,25 +104,26 @@ block content
 
       pre
         code.language-sql.
-          SELECT*
+          SELECT *
           FROM WEAPON w1 FULL JOIN WEAPON w2
           ON Max_distance
           WHERE w1.Id! = w2.Id;
-
       table.table.table-hover
         thead
           tr
             th Name
-            th Max Damage
-            th Min Damage
-            th Mag Size
+            th Rate of fire
+            th Muzzle Velocity
+            th Max Distance
+            th Bullet Drop
         tbody
-          each weapon in query1
+          each weapon in query4
             tr
               td #{ weapon.Name }
-              td #{ weapon.Max_damage }
-              td #{ weapon.Min_damage }
-              td #{ weapon.Mag_size }
+              td #{ weapon.Rate_of_fire }
+              td #{ weapon.Muzzle_velocity }
+              td #{ weapon.Max_dist }
+              td #{ weapon.Bullet_drop }
 
       br
       br
@@ -135,33 +137,27 @@ block content
           FROM DAMAGE AS D
           WHERE 45 < ( SELECT Max_damage
                        WHERE D.id = id );
-         SELECT Id
-         FROM WEAPON
-         INTERSECT (SELECT Id
+          SELECT Id
+          FROM WEAPON
+          INTERSECT (SELECT Id
                     FROM SUPPLY
                     WHERE count > 0);
       table.table.table-hover
         thead
           tr
             th Name
-            th Max Damage
-            th Min Damage
-            th Rate of Fire (RPM)
+            th Rate of fire
             th Muzzle Velocity
             th Max Distance
             th Bullet Drop
-            th Supply
         tbody
-          each weapon in query3
+          each weapon in query5
             tr
               td #{ weapon.Name }
-              td #{ weapon.Max_damage }
-              td #{ weapon.Min_damage }
               td #{ weapon.Rate_of_fire }
               td #{ weapon.Muzzle_velocity }
               td #{ weapon.Max_dist }
               td #{ weapon.Bullet_drop }
-              td #{ weapon.Supply}
 
       br
       br
@@ -175,7 +171,7 @@ block content
           WHERE Max_damage > ALL ( SELECT Max_damage
                                   FROM WEAPON)
           AND count>ALL (SELECT count
-          FROM SUPPLY);
+                         FROM SUPPLY);
       table.table.table-hover
         thead
           tr
@@ -186,8 +182,9 @@ block content
             th Muzzle Velocity
             th Max Distance
             th Bullet Drop
+            th Supply Count
         tbody
-          each weapon in query3
+          each weapon in query6
             tr
               td #{ weapon.Name }
               td #{ weapon.Max_damage }
@@ -196,7 +193,7 @@ block content
               td #{ weapon.Muzzle_velocity }
               td #{ weapon.Max_dist }
               td #{ weapon.Bullet_drop }
-
+              td #{ weapon.count }
       br
       br
 
@@ -214,22 +211,12 @@ block content
         thead
           tr
             th Name
-            th Max Damage
-            th Min Damage
-            th Rate of Fire (RPM)
-            th Muzzle Velocity
-            th Max Distance
-            th Bullet Drop
+            th Supply Count
         tbody
-          each weapon in query3
+          each weapon in query7
             tr
               td #{ weapon.Name }
-              td #{ weapon.Max_damage }
-              td #{ weapon.Min_damage }
-              td #{ weapon.Rate_of_fire }
-              td #{ weapon.Muzzle_velocity }
-              td #{ weapon.Max_dist }
-              td #{ weapon.Bullet_drop }
+              td #{ weapon.count }
 
       br
       br
@@ -239,10 +226,14 @@ block content
       p List List Weapons with Highest Damage and Least Spread
       pre
         code.language-sql.
-        SELECT*
-FROMWEAPONJOINSPREADONId WHEREMax_damage>ALL(SELECTmax_damage
-FROMWEAPON) Spread_Min<ALL(SELECTSpread_Min
-FROMSPREAD);
+          SELECT *
+          FROM WEAPON
+          JOIN SPREAD
+            ON Id
+          WHERE Max_damage > ALL(SELECT max_damage 
+                                 FROM WEAPON)
+          Spread_Min < ALL (SELECT Spread_Min
+                            FROM SPREAD);
 
       table.table.table-hover
         thead
@@ -253,9 +244,9 @@ FROMSPREAD);
             th Rate of Fire (RPM)
             th Muzzle Velocity
             th Max Distance
-            th Bullet Drop
+            th Spread
         tbody
-          each weapon in query3
+          each weapon in query8
             tr
               td #{ weapon.Name }
               td #{ weapon.Max_damage }
@@ -263,24 +254,48 @@ FROMSPREAD);
               td #{ weapon.Rate_of_fire }
               td #{ weapon.Muzzle_velocity }
               td #{ weapon.Max_dist }
-              td #{ weapon.Bullet_drop }
+              td #{ weapon.Ads_mm }
 
       br
       br
 
-      h2 SONAL ADD YOUR QUERY9  SHIT
-      br
-      br
+      h2 Query 9
+      p Lists all weapons ordered by maximum damage in ascending order.
+      pre
+        code.language-sql.
+          SELECT *
+          FROM WEAPON
+          ORDER BY Max_damage ASC;
+
+      table.table.table-hover
+        thead
+          tr
+            th Name
+            th Max Damage
+            th Min Damage
+            th Rate of Fire (RPM)
+            th Muzzle Velocity
+            th Max Distance
+        tbody
+          each weapon in query9
+            tr
+              td #{ weapon.Name }
+              td #{ weapon.Max_damage }
+              td #{ weapon.Min_damage }
+              td #{ weapon.Rate_of_fire }
+              td #{ weapon.Muzzle_velocity }
+              td #{ weapon.Max_dist }
 
 
       h2 Query 10
-      p List List Weapons with Highest Damage and Least Spread
+      p List Weapons that are currently not in the supply and ordered by name.
       pre
         code.language-sql.
-        SELECT*
-        FROM WEAPON JOINSUPPLY ONI d
-        WHERE count=0 
-        ORDER BY Name;
+          SELECT *
+          FROM WEAPON JOIN SUPPLY
+          ON id
+          WHERE count = 0
+          ORDER BY Name;
 
       table.table.table-hover
         thead
@@ -291,9 +306,9 @@ FROMSPREAD);
             th Rate of Fire (RPM)
             th Muzzle Velocity
             th Max Distance
-            th Bullet Drop
+            th Supply Count
         tbody
-          each weapon in query3
+          each weapon in query10
             tr
               td #{ weapon.Name }
               td #{ weapon.Max_damage }
@@ -301,7 +316,4 @@ FROMSPREAD);
               td #{ weapon.Rate_of_fire }
               td #{ weapon.Muzzle_velocity }
               td #{ weapon.Max_dist }
-              td #{ weapon.Bullet_drop }
-
-      br
-      br
+              td #{ weapon.count }
